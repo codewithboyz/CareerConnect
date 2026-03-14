@@ -9,9 +9,7 @@
 </head>
 
 <body>
-    <h1>Welcome chayan</h1>
-    <span>THis is testing git for our project</span>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt odit perspiciatis expedita, reiciendis facilis quis, voluptatum rerum nulla, inventore cum aspernatur dolor illo asperiores laboriosam! Non quo blanditiis voluptate odit?</p>
+   
 </body>
 
 </html>
