@@ -139,5 +139,4 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="nav.js"></script>
-  </body>
-</html>
+  
