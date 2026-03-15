@@ -1,0 +1,18 @@
+.sc-body {
+  background-color: #fffefe;
+}
+.hover {
+  /* background-color: #eef3fd; */
+  font-weight: 500;
+}
+.hover:hover {
+  background-color: #2563eb !important;
+  color: #eef3fd;
+}
+.hover:hover .icon-circle i {
+  color: #2563eb;
+}
+.icon-circle {
+  width: 32px;
+  height: 32px;
+}
