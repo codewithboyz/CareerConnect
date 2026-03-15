@@ -10,7 +10,7 @@
 
 <body>
     <?php include "nav.php";?>
-   
+    <?php include "ourvideo.php";?>
 </body>
 
 </html>
