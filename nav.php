@@ -1,107 +1,102 @@
-<!doctype html>
-<html lang="en">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3"
+    style="background-color: #f8f9fa; margin: 0; padding: 0;">
+    <div class=" container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="Asset/Image/testimonials-4.jpg" width="35" class="me-2" />
+            <div>
+                <span class="logo-main">Jobs</span>
+                <span class="logo-bold">Portal</span>
+                <div class="logo-sub">ONLINE JOBS FINDER</div>
+            </div>
+        </a>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <title>Jobs Portal Navbar</title>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="home">Home</a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a href="?page=home1">Home 1</a></li>
+                        <li><a href="?page=home2">Home 2</a></li>
+                    </ul>
+                </li>
 
-    <!-- Bootstrap CSS -->
-    <link href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="jobs">Jobs</a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Job Details</a></li>
+                    </ul>
+                </li>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="nav.css" />
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="employer">Employer</a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a href="#">Employer List</a></li>
+                        <li><a href="#">Employer Details</a></li>
+                    </ul>
+                </li>
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="candidate">Candidate</a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a href="#">Candidate List</a></li>
+                        <li><a href="#">Candidate Profile</a></li>
+                    </ul>
+                </li>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
-        <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="Asset/Image/testimonials-4.jpg" width="35" class="me-2" />
-                <div>
-                    <span class="logo-main">Jobs</span>
-                    <span class="logo-bold">Portal</span>
-                    <div class="logo-sub">ONLINE JOBS FINDER</div>
-                </div>
-            </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="blog">Blog</a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a href="#">Blog Grid</a></li>
+                        <li><a href="#">Blog Details</a></li>
+                    </ul>
+                </li>
 
-            <!-- Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
 
-            <!-- Menu -->
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-dropdown="home">Home</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                        </ul>
-                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="pages">Pages</a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-dropdown="jobs">Jobs</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a href="#">Browse Jobs</a></li>
-                            <li><a href="#">Job Details</a></li>
-                        </ul>
-                    </li>
+            <!-- Buttons -->
+            <div class="nav-buttons d-flex align-items-center">
+                <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-dropdown="employer">Employer</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a href="#">Employer List</a></li>
-                            <li><a href="#">Employer Details</a></li>
-                        </ul>
-                    </li>
+                <a href="#" class="btn btn-success register-btn ms-2">Register</a>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-dropdown="candidate">Candidate</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a href="#">Candidate List</a></li>
-                            <li><a href="#">Candidate Profile</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-dropdown="blog">Blog</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a href="#">Blog Grid</a></li>
-                            <li><a href="#">Blog Details</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-dropdown="pages">Pages</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <!-- Buttons -->
-                <div class="nav-buttons d-flex align-items-center">
-                    <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
-
-                    <a href="#" class="btn btn-success register-btn ms-2">Register</a>
-
-                    <img src="Asset/Image/testimonials-4.jpg" class="profile-img ms-3" />
-                </div>
+                <img src="Asset/Image/testimonials-4.jpg" class="profile-img ms-3" />
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="nav.js"></script>
+
+<script>
+const dropdownLinks = document.querySelectorAll(".dropdown");
+
+dropdownLinks.forEach(drop => {
+
+    drop.addEventListener("mouseenter", () => {
+        drop.querySelector(".custom-dropdown").style.display = "block";
+    });
+
+    drop.addEventListener("mouseleave", () => {
+        drop.querySelector(".custom-dropdown").style.display = "none";
+    });
+
+});
+</script>
