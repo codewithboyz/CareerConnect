@@ -22,8 +22,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-dropdown="home">Home</a>
                     <ul class="dropdown-menu custom-dropdown">
-                        <li><a href="?page=home1">Home 1</a></li>
-                        <li><a href="?page=home2">Home 2</a></li>
+                        <li><a href="#home1">Home 1</a></li>
+                        <li><a href="#home2">Home 2</a></li>
                     </ul>
                 </li>
 
