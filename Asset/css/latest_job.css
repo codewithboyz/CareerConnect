@@ -1,0 +1,23 @@
+.bgr {
+  background-color: #ebe2fc;
+  color: #9260e4;
+}
+.bgr1 {
+  background-color: #dbf2fc;
+  color: #177e9d;
+}
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+h4:hover {
+  color: #0d6efd;
+}
+.view-btn {
+  font-size: 1.2rem;
+  font-weight: 400;
+  box-shadow: 0 20px 45px rgba(108, 132, 254, 0.3);
+}

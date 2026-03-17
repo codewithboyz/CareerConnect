@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.category-section {
+  padding: 90px 0;
+}
+
+.sub-title {
+  color: #22c55e;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: large;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* slider container */
+.slider-container {
+  position: relative;
+}
+
+/* slider */
+.slider {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  padding: 2%;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* card */
+.category-card {
+  min-width: 260px;
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(9, 132, 220, 0.15);
+  background-color: #bcd0f5;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.icon-box img {
+  width: 35px;
+}
+
+.category-card h5 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.job-count {
+  display: inline-block;
+  background: #e8f0ff;
+  color: #2563eb;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -10px;
+}
+
+/* button */
+.view-btn {
+  margin-top: 40px;
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  border: none;
+  padding: 14px 35px;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 28px;
+  }
+
+  /* 1 card only */
+  .category-card {
+    min-width: 100%;
+    padding: 30px 20px;
+  }
+
+  /* remove gap for perfect slide */
+  .slider {
+    gap: 0;
+  }
+
+  .slider {
+    padding: 0%;
+  }
+}

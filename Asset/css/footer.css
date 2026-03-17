@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #ec5b13;
+    --bg-dark: #1a1d21;
+    --bg-darker: #141619;
+    --text-muted: #9ca3af;
+    --border-color: #2d3136;
+}
+
+body {
+    min-height: max(884px, 100dvh);
+    font-family: 'Public Sans', sans-serif;
+    background-color: #f8f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+.job-portal-footer {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-heading {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 767.98px) {
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-links,
+    .contact-info {
+        text-align: center;
+    }
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+    display: block;
+    padding: 0.25rem 0;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.contact-info {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .contact-item {
+        justify-content: center;
+    }
+}
+
+.contact-item .material-symbols-outlined {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .social-links {
+        justify-content: center;
+    }
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background-color: var(--border-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer-bottom {
+    background-color: var(--bg-darker);
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.payment-logos {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+    .payment-logos {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .copyright-text {
+        text-align: center;
+    }
+}
+
+.payment-logos img {
+    height: 24px;
+    opacity: 0.7;
+    filter: grayscale(100%) brightness(200%);
+}
+
+.copyright-text {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0;
+}

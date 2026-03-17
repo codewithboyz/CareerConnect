@@ -1,0 +1,14 @@
+section {
+  background-color: #f1fcf8;
+}
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+.card-title {
+  width: 5.5rem;
+  height: 5.5rem;
+}
