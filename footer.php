@@ -1,13 +1,4 @@
-<!DOCTYPE html>
 
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Job Portal Mobile Footer</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet" />
@@ -194,9 +185,7 @@
             min-height: max(884px, 100dvh);
         }
     </style>
-</head>
 
-<body>
     <!-- Main Footer Container -->
     <footer class="job-portal-footer">
         <div class="container">

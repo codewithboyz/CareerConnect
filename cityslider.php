@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href="cityslider.css">
 <section>
     <div style="background-color: #f8f9fa;margin-top: 30px;">
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">

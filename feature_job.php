@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css" />
-  <!-- External CSS-->
   <link rel="stylesheet" href="feature_job.css" />
-  <!--Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-</head>
 
-<body>
   <!-- Featured Jobs Section -->
 
   <section class="py-5 ">
@@ -206,7 +193,3 @@
       </div>
     </div>
   </section>
-
-</body>
-
-</html>

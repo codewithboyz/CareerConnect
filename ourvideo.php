@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="ourvideo.css">
 <section>
     <div style="background-color: #f8f9fa; height: 500px; margin-top: 30px;">
         <div class=" container" style="padding-top: 40px; padding-bottom: 40px;">
@@ -67,18 +68,18 @@
 
 
 <script>
-const videoModal = document.getElementById('videoModal')
-const iframe = document.getElementById('video')
+    const videoModal = document.getElementById('videoModal')
+    const iframe = document.getElementById('video')
 
-videoModal.addEventListener('show.bs.modal', function() {
+    videoModal.addEventListener('show.bs.modal', function() {
 
-    iframe.src = "https://www.youtube.com/embed/Q_DsV0opv94"
+        iframe.src = "https://www.youtube.com/embed/Q_DsV0opv94"
 
-})
+    })
 
-videoModal.addEventListener('hidden.bs.modal', function() {
+    videoModal.addEventListener('hidden.bs.modal', function() {
 
-    iframe.src = ""
+        iframe.src = ""
 
-})
+    })
 </script>

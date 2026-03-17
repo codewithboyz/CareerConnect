@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonials</title>
-
-  <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="testimonial.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-</head>
-
-<body>
+ 
 
   <section class="testimonial-section py-5">
     <div class="container">
@@ -157,109 +145,27 @@
   <script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    var slider = document.getElementById('sliderContainer');
-    var track = document.getElementById('sliderTrack');
-    var btnNext = document.getElementById('nextBtn');
-    var btnPrev = document.getElementById('prevBtn');
-    var wrapper = document.querySelector('.slider-wrapper');
+   document.addEventListener("DOMContentLoaded", function () {
 
-    var isHovering = false;
-    var isDragging = false;
-    var startPosition = 0;
-    var currentScroll = 0;
+  var slider = document.getElementById('sliderContainer');
+  var track = document.getElementById('sliderTrack');
+  var btnNext = document.getElementById('nextBtn');
+  var btnPrev = document.getElementById('prevBtn');
 
-    function moveSliderAutomatically() {
-      if (isHovering == false && isDragging == false) {
-        slider.scrollLeft = slider.scrollLeft + 1;
+  btnNext.onclick = function () {
+    slider.scrollBy({
+      left: 350,
+      behavior: 'smooth'
+    });
+  };
 
-        var halfWidth = track.scrollWidth / 2;
-        if (slider.scrollLeft >= halfWidth) {
-          slider.scrollLeft = 0;
-        }
-      }
-    }
+  btnPrev.onclick = function () {
+    slider.scrollBy({
+      left: -350,
+      behavior: 'smooth'
+    });
+  };
 
-    setInterval(moveSliderAutomatically, 10);
-
-    wrapper.onmouseenter = function() {
-      isHovering = true;
-    };
-
-    wrapper.onmouseleave = function() {
-      isHovering = false;
-      isDragging = false;
-    };
-
-
-    slider.onmousedown = function(event) {
-      isDragging = true;
-      slider.style.cursor = "grab";
-      startPosition = event.pageX;
-      currentScroll = slider.scrollLeft;
-    };
-
-    slider.onmouseup = function() {
-      isDragging = false;
-      slider.style.cursor = "default";
-    };
-
-    slider.onmousemove = function(event) {
-      if (isDragging == true) {
-        event.preventDefault();
-        var distance = event.pageX - startPosition;
-        slider.scrollLeft = currentScroll - distance;
-      }
-    };
-
-
-    slider.ontouchstart = function(event) {
-      isDragging = true;
-      startPosition = event.touches[0].pageX;
-      currentScroll = slider.scrollLeft;
-    };
-
-    slider.ontouchend = function() {
-      isDragging = false;
-    };
-
-    slider.ontouchmove = function(event) {
-      if (isDragging == true) {
-        var distance = event.touches[0].pageX - startPosition;
-        slider.scrollLeft = currentScroll - distance;
-      }
-    };
-
-
-    btnNext.onclick = function() {
-      var moveAmount = 350;
-      slider.scrollBy({
-        left: moveAmount,
-        behavior: 'smooth'
-      });
-
-
-      setTimeout(function() {
-        var halfWidth = track.scrollWidth / 2;
-        if (slider.scrollLeft >= halfWidth) {
-          slider.scrollLeft = 0;
-        }
-      }, 500);
-    };
-
-    btnPrev.onclick = function() {
-      var moveAmount = 350; // Slide by 350 pixels
-
-      if (slider.scrollLeft <= 0) {
-        slider.scrollLeft = track.scrollWidth / 2;
-      }
-
-      slider.scrollBy({
-        left: -moveAmount,
-        behavior: 'smooth'
-      });
-    };
+});
   </script>
 
-</body>
-
-</html>
