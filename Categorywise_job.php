@@ -20,7 +20,6 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/2910/2910768.png">
                     </div>
                     <h5>Database Administration</h5>
-                    <div class="job-count">(1) Jobs</div>
                 </div>
 
                 <div class="category-card">
@@ -28,7 +27,6 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png">
                     </div>
                     <h5>Business Management</h5>
-                    <div class="job-count">(2) Jobs</div>
                 </div>
 
                 <div class="category-card">
@@ -36,7 +34,7 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/4140/4140048.png">
                     </div>
                     <h5>Admin</h5>
-                    <div class="job-count">(3) Jobs</div>
+
                 </div>
 
                 <div class="category-card">
@@ -44,7 +42,7 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/1055/1055687.png">
                     </div>
                     <h5>Information Technology</h5>
-                    <div class="job-count">(5) Jobs</div>
+
                 </div>
 
                 <div class="category-card">
@@ -52,7 +50,7 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png">
                     </div>
                     <h5>Software Development</h5>
-                    <div class="job-count">(4) Jobs</div>
+g
                 </div>
 
                 <div class="category-card">
@@ -60,7 +58,7 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png">
                     </div>
                     <h5>Marketing</h5>
-                    <div class="job-count">(3) Jobs</div>
+
                 </div>
 
             </div>

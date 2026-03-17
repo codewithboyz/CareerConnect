@@ -1,8 +1,8 @@
 
     <link href="Search&post_job.css" rel="stylesheet" />
 
-
-    <div class="container my-5">
+<div class="search-post-main">
+    <div class="container ">
         <div class="row g-4">
 
             <!-- Search Job -->
@@ -16,7 +16,7 @@
                     </div>
 
                     <div>
-                        <img src="Asset/Image/job-seaerch.png" class="img-fluid job-img">
+                        <img src="Asset/Image/job-seaerch.png" class=" job-img">
                     </div>
 
                 </div>
@@ -33,7 +33,7 @@
                     </div>
 
                     <div>
-                        <img src="Asset/Image/send-job-removebg-preview.png" class="img-fluid job-img">
+                        <img src="Asset/Image/send-job-removebg-preview.png" class=" job-img">
                     </div>
 
                 </div>
@@ -41,3 +41,4 @@
 
         </div>
     </div>
+</div>

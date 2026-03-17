@@ -5,6 +5,10 @@
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
+.search-post-main {
+ padding-top: 2%;
+ background: linear-gradient(to right, #f3f7ff, #e8f8fe);;
+}
 .search-card {
   background: #6acff7;
 }
