@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Categoriwise_job.css">
+<link rel="stylesheet" href="Asset/css/Categoriwise_job.css">
 
 <section class="category-section">
 
@@ -50,7 +50,6 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png">
                     </div>
                     <h5>Software Development</h5>
-g
                 </div>
 
                 <div class="category-card">
@@ -76,59 +75,59 @@ g
 </section>
 
 <script>
-    const slider = document.getElementById("slider");
-    const leftBtn = document.getElementById("leftBtn");
-    const rightBtn = document.getElementById("rightBtn");
+const slider = document.getElementById("slider");
+const leftBtn = document.getElementById("leftBtn");
+const rightBtn = document.getElementById("rightBtn");
 
-    function getScrollAmount() {
+function getScrollAmount() {
 
-        const card = document.querySelector(".category-card");
+    const card = document.querySelector(".category-card");
 
-        if (window.innerWidth < 768) {
-            return card.offsetWidth;
-        } else {
-            return card.offsetWidth + 25;
-        }
-
+    if (window.innerWidth < 768) {
+        return card.offsetWidth;
+    } else {
+        return card.offsetWidth + 25;
     }
 
-    rightBtn.addEventListener("click", () => {
+}
+
+rightBtn.addEventListener("click", () => {
+    slider.scrollBy({
+        left: getScrollAmount(),
+        behavior: "smooth"
+    });
+});
+
+leftBtn.addEventListener("click", () => {
+    slider.scrollBy({
+        left: -getScrollAmount(),
+        behavior: "smooth"
+    });
+});
+
+/* swipe */
+
+let startX = 0;
+
+slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", (e) => {
+
+    let endX = e.changedTouches[0].clientX;
+
+    if (startX > endX) {
         slider.scrollBy({
             left: getScrollAmount(),
             behavior: "smooth"
         });
-    });
-
-    leftBtn.addEventListener("click", () => {
+    } else {
         slider.scrollBy({
             left: -getScrollAmount(),
             behavior: "smooth"
         });
-    });
+    }
 
-    /* swipe */
-
-    let startX = 0;
-
-    slider.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-    });
-
-    slider.addEventListener("touchend", (e) => {
-
-        let endX = e.changedTouches[0].clientX;
-
-        if (startX > endX) {
-            slider.scrollBy({
-                left: getScrollAmount(),
-                behavior: "smooth"
-            });
-        } else {
-            slider.scrollBy({
-                left: -getScrollAmount(),
-                behavior: "smooth"
-            });
-        }
-
-    });
+});
 </script>

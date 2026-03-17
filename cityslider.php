@@ -1,11 +1,11 @@
-
-<link rel="stylesheet" href="cityslider.css">
+<link rel="stylesheet" href="Asset/css/cityslider.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <section>
     <div style="background-color: #f8f9fa;margin-top: 30px;">
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
 
-            <p class=" sub-title">Choose Your Location</p>
-            <h2 class="main-title">Jobs by Cities</h2>
+            <p class=" sub-title text-center">Choose Your Location</p>
+            <h2 class=" main-title text-center">Jobs by Cities</h2>
 
             <div class="swiper mySlider">
 

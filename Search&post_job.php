@@ -1,5 +1,4 @@
-
-    <link href="Search&post_job.css" rel="stylesheet" />
+<link href="Asset/css/Search&post_job.css" rel="stylesheet" />
 
 <div class="search-post-main">
     <div class="container ">
