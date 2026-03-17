@@ -18,7 +18,7 @@
 
     <div style="background-color: white;">
         <?php include "nav.php"; ?>
-        <?php include 'hero.php' ?>
+        <?php include 'herobanner.php' ?>
         <?php include 'Search&post_job.php'; ?>
         <?php include 'Top-Company-Hirering.php'; ?>
         <?php include 'Categorywise_job.php'; ?>

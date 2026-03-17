@@ -1,22 +1,6 @@
-<!DOCTYPE html>
 
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>JobsPortal - Hero Section</title>
-    <!-- Bootstrap 5.3.3 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="herobanner.css" />
-</head>
 
-<body>
     <!-- BEGIN: HeroSection -->
     <section class="hero-section" id="hero">
         <div class="container container-custom">
@@ -78,9 +62,3 @@
             </div>
         </div>
     </section>
-    <!-- END: HeroSection -->
-    <!-- Bootstrap 5.3.3 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
