@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.here-you-can-see {
+  color: rgb(26, 197, 57);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top-company {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.company_card {
+  width: 17rem;
+  height: 13rem;
+}
+.img-fluid {
+  height: 50px;
+  width: 60px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.company_card {
+  border-radius: 20px;
+
+  box-shadow: 0px 5px 10px rgba(106, 103, 103, 0.2);
+  transition: 0.3s;
+}
+.company_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(79, 128, 242, 0.3   );
+}
+.card-body p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.open-job {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3px;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: rgb(217, 236, 252);
+}
+.location {
+  font-weight: normal;
+  color: blue;
+}
+.row a {
+  text-decoration: none;
+}
+.view-all-btn {
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0px 10px 30px rgba(34, 95, 237,0.5);
+}
+/* resposive design */
+@media (max-width: 576px) {
+  .top-company {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .here-you-can-see {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .company_card {
+    width: 20rem;
+    height: 13rem;
+    margin: auto;
+  }
+}

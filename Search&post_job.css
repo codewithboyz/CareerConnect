@@ -1,0 +1,30 @@
+.job-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.search-card {
+  background: #6acff7;
+}
+.post-card {
+  background-color: rgb(4, 240, 240);
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.job-img {
+  width: 120px;
+}
+
+.job-card h4 {
+  font-weight: 600;
+}
+
+.job-card p {
+  color: #303030;
+}
