@@ -50,6 +50,7 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
   flex-shrink: 0;
+  user-select: none;
 }
 
 .category-card:hover {

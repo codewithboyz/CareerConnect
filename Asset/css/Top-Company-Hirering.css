@@ -33,9 +33,9 @@
 }
 
 /* Body */
-.card-body {
+/* .card-body {
   text-align: center;
-}
+} */
 
 /* Location */
 .location {
@@ -55,7 +55,6 @@
 /* Remove link underline */
 .row a {
   text-decoration: none;
-  color: inherit;
 }
 
 /* Button */
