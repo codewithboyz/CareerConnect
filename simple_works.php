@@ -13,7 +13,7 @@
                     <div class="card border-0 rounded-4 shadow h-100 py-2">
                         <div class="card-body d-flex align-items-center justify-content-center flex-column gap-2">
                             <div
-                                class="card-title shadow-lg d-inline-flex align-items-center justify-content-center fs-2 text-primary rounded-pill bg-white">
+                                class="card-title title_1 shadow-lg d-inline-flex align-items-center justify-content-center fs-2 text-primary rounded-pill bg-white">
                                 <i class="fa-solid fa-user-plus"></i>
                             </div>
                             <h5 class="card-text fw-bold">Create An Account</h5>
@@ -26,7 +26,7 @@
                     <div class="card border-0 rounded-4 shadow h-100 py-2">
                         <div class="card-body d-flex align-items-center justify-content-center flex-column gap-2">
                             <div
-                                class="card-title shadow-lg d-inline-flex align-items-center justify-content-center fs-2 text-primary rounded-pill bg-white">
+                                class="card-title title_1 shadow-lg d-inline-flex align-items-center justify-content-center fs-2 text-primary rounded-pill bg-white">
                                 <i class="fa-solid fa-file"></i>
                             </div>
                             <h5 class="card-text fw-bold">Complete your profile</h5>
@@ -39,7 +39,7 @@
                     <div class="card border-0 rounded-4 shadow h-100 py-2">
                         <div class="card-body d-flex align-items-center justify-content-center flex-column gap-2">
                             <div
-                                class="card-title shadow-lg d-inline-flex align-items-center justify-content-center fs-2 text-primary rounded-pill bg-white">
+                                class="card-title title_1 shadow-lg d-inline-flex align-items-center justify-content-center fs-2 text-primary rounded-pill bg-white">
                                 <i class="fa-solid fa-paper-plane"></i>
                             </div>
                             <h5 class="card-text fw-bold">Apply job or hire</h5>

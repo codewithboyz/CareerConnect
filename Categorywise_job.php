@@ -67,7 +67,7 @@
         </div>
 
         <div class="text-center">
-            <button class="view-btn">View All Categories</button>
+            <button class="view-btn btn-primaty">View All Categories</button>
         </div>
 
     </div>
@@ -75,59 +75,59 @@
 </section>
 
 <script>
-const slider = document.getElementById("slider");
-const leftBtn = document.getElementById("leftBtn");
-const rightBtn = document.getElementById("rightBtn");
+    const slider = document.getElementById("slider");
+    const leftBtn = document.getElementById("leftBtn");
+    const rightBtn = document.getElementById("rightBtn");
 
-function getScrollAmount() {
+    function getScrollAmount() {
 
-    const card = document.querySelector(".category-card");
+        const card = document.querySelector(".category-card");
 
-    if (window.innerWidth < 768) {
-        return card.offsetWidth;
-    } else {
-        return card.offsetWidth + 25;
+        if (window.innerWidth < 768) {
+            return card.offsetWidth;
+        } else {
+            return card.offsetWidth + 25;
+        }
+
     }
 
-}
-
-rightBtn.addEventListener("click", () => {
-    slider.scrollBy({
-        left: getScrollAmount(),
-        behavior: "smooth"
-    });
-});
-
-leftBtn.addEventListener("click", () => {
-    slider.scrollBy({
-        left: -getScrollAmount(),
-        behavior: "smooth"
-    });
-});
-
-/* swipe */
-
-let startX = 0;
-
-slider.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-});
-
-slider.addEventListener("touchend", (e) => {
-
-    let endX = e.changedTouches[0].clientX;
-
-    if (startX > endX) {
+    rightBtn.addEventListener("click", () => {
         slider.scrollBy({
             left: getScrollAmount(),
             behavior: "smooth"
         });
-    } else {
+    });
+
+    leftBtn.addEventListener("click", () => {
         slider.scrollBy({
             left: -getScrollAmount(),
             behavior: "smooth"
         });
-    }
+    });
 
-});
+    /* swipe */
+
+    let startX = 0;
+
+    slider.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    slider.addEventListener("touchend", (e) => {
+
+        let endX = e.changedTouches[0].clientX;
+
+        if (startX > endX) {
+            slider.scrollBy({
+                left: getScrollAmount(),
+                behavior: "smooth"
+            });
+        } else {
+            slider.scrollBy({
+                left: -getScrollAmount(),
+                behavior: "smooth"
+            });
+        }
+
+    });
 </script>

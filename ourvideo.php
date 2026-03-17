@@ -34,7 +34,7 @@
 
                         <img src="Asset/Image/jobscarch.jpg" class="video-img">
 
-                        <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <button class="play-btn text-center px-4" data-bs-toggle="modal" data-bs-target="#videoModal">
                             ▶
                         </button>
 
@@ -68,18 +68,18 @@
 
 
 <script>
-const videoModal = document.getElementById('videoModal')
-const iframe = document.getElementById('video')
+    const videoModal = document.getElementById('videoModal')
+    const iframe = document.getElementById('video')
 
-videoModal.addEventListener('show.bs.modal', function() {
+    videoModal.addEventListener('show.bs.modal', function() {
 
-    iframe.src = "https://www.youtube.com/embed/Q_DsV0opv94"
+        iframe.src = "https://www.youtube.com/embed/Q_DsV0opv94"
 
-})
+    })
 
-videoModal.addEventListener('hidden.bs.modal', function() {
+    videoModal.addEventListener('hidden.bs.modal', function() {
 
-    iframe.src = ""
+        iframe.src = ""
 
-})
+    })
 </script>

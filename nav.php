@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="Asset/css/nav.css" />
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3"
-    style="background-color: #f8f9fa; margin: 0; padding: 0;">
-    <div class=" container">
-        <!-- Logo -->
+<link rel="stylesheet" href="Asset/css/nav.css">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+    <div class="container">
+
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="Asset/Image/testimonials-4.jpg" width="35" class="me-2" />
+            <img src="Asset/Image/testimonials-4.jpg" width="35" class="me-2" alt="Logo" />
             <div>
                 <span class="logo-main">Jobs</span>
                 <span class="logo-bold">Portal</span>
@@ -12,92 +12,114 @@
             </div>
         </a>
 
-        <!-- Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="home">Home</a>
-                    <ul class="dropdown-menu custom-dropdown">
-                        <li><a href="#home1">Home 1</a></li>
-                        <li><a href="#home2">Home 2</a></li>
-                    </ul>
-                </li>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="jobs">Jobs</a>
-                    <ul class="dropdown-menu custom-dropdown">
-                        <li><a href="#">Browse Jobs</a></li>
-                        <li><a href="#">Job Details</a></li>
-                    </ul>
-                </li>
+            <div class="offcanvas-header border-bottom d-lg-none justify-content-end">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="employer">Employer</a>
-                    <ul class="dropdown-menu custom-dropdown">
-                        <li><a href="#">Employer List</a></li>
-                        <li><a href="#">Employer Details</a></li>
-                    </ul>
-                </li>
+            <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="candidate">Candidate</a>
-                    <ul class="dropdown-menu custom-dropdown">
-                        <li><a href="#">Candidate List</a></li>
-                        <li><a href="#">Candidate Profile</a></li>
-                    </ul>
-                </li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                            <li><a href="#">Home Page 1</a></li>
+                            <li><a href="#">Home Page 2</a></li>
+                            <li><a href="#">Home Page 3</a></li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="blog">Blog</a>
-                    <ul class="dropdown-menu custom-dropdown">
-                        <li><a href="#">Blog Grid</a></li>
-                        <li><a href="#">Blog Details</a></li>
-                    </ul>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Jobs
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="#">Job Details</a></li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Employer
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                            <li><a href="#">Employer List</a></li>
+                            <li><a href="#">Employer Details</a></li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-dropdown="pages">Pages</a>
-                    <ul class="dropdown-menu custom-dropdown">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </li>
-            </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Candidate
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                            <li><a href="#">Candidate List</a></li>
+                            <li><a href="#">Candidate Profile</a></li>
+                        </ul>
+                    </li>
 
-            <!-- Buttons -->
-            <div class="nav-buttons d-flex align-items-center">
-                <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                            <li><a href="#">Blog Grid</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                        </ul>
+                    </li>
 
-                <a href="#" class="btn btn-success register-btn ms-2">Register</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
 
-                <img src="Asset/Image/testimonials-4.jpg" class="profile-img ms-3" />
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="nav-buttons d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
+                    <a href="#" class="btn btn-success register-btn ms-lg-2">Register</a>
+
+                    <div class="profile-wrapper ms-lg-3">
+                        <img src="Asset/Image/testimonials-4.jpg" class="profile-img" alt="Profile" />
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </nav>
 
+<script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-const dropdownLinks = document.querySelectorAll(".dropdown");
-
-dropdownLinks.forEach(drop => {
-
-    drop.addEventListener("mouseenter", () => {
-        drop.querySelector(".custom-dropdown").style.display = "block";
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.innerWidth >= 992) {
+            document.querySelectorAll('.dropdown').forEach(drop => {
+                drop.addEventListener('mouseenter', function() {
+                    let menu = this.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.add('show');
+                });
+                drop.addEventListener('mouseleave', function() {
+                    let menu = this.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.remove('show');
+                });
+            });
+        }
     });
-
-    drop.addEventListener("mouseleave", () => {
-        drop.querySelector(".custom-dropdown").style.display = "none";
-    });
-
-});
 </script>
