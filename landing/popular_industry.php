@@ -1,5 +1,5 @@
 <!-- External CSS-->
-<link rel="stylesheet" href="Asset/css/popular_indus.css">
+<link rel="stylesheet" href="landing/css/popular_indus.css">
 
 
 

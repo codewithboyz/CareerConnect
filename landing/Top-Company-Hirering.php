@@ -1,4 +1,4 @@
-<link href="Asset/css/Top-Company-Hirering.css" rel="stylesheet" />
+<link href="landing/css/Top-Company-Hirering.css" rel="stylesheet" />
 
 <div class="top-company">
     <h4 class="text-success text-center py-3 pt-5">Here You Can See</h4>

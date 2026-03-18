@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/nav.css">
+<link rel="stylesheet" href="landing/css/nav.css">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
     <div class="container">
@@ -12,21 +12,24 @@
             </div>
         </a>
 
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            aria-controls="offcanvasMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
 
             <div class="offcanvas-header border-bottom d-lg-none justify-content-end">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
 
             <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
 
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             Home
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
@@ -37,7 +40,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             Jobs
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
@@ -47,7 +51,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             Employer
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
@@ -57,7 +62,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             Candidate
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
@@ -67,7 +73,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             Blog
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
@@ -81,7 +88,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             Pages
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
@@ -108,18 +116,18 @@
 <script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        if (window.innerWidth >= 992) {
-            document.querySelectorAll('.dropdown').forEach(drop => {
-                drop.addEventListener('mouseenter', function() {
-                    let menu = this.querySelector('.dropdown-menu');
-                    if (menu) menu.classList.add('show');
-                });
-                drop.addEventListener('mouseleave', function() {
-                    let menu = this.querySelector('.dropdown-menu');
-                    if (menu) menu.classList.remove('show');
-                });
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.innerWidth >= 992) {
+        document.querySelectorAll('.dropdown').forEach(drop => {
+            drop.addEventListener('mouseenter', function() {
+                let menu = this.querySelector('.dropdown-menu');
+                if (menu) menu.classList.add('show');
             });
-        }
-    });
+            drop.addEventListener('mouseleave', function() {
+                let menu = this.querySelector('.dropdown-menu');
+                if (menu) menu.classList.remove('show');
+            });
+        });
+    }
+});
 </script>

@@ -1,5 +1,5 @@
 <!-- External CSS-->
-<link rel="stylesheet" href="Asset/css/simple_works.css">
+<link rel="stylesheet" href="landing/css/simple_works.css">
 
 <!-- How it works Section -->
 <section class="py-5">

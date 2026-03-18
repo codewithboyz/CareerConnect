@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/cityslider.css" />
+<link rel="stylesheet" href="landing/css/cityslider.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <section>
     <div style="background: linear-gradient(to right, #f3f7ff, #e8f8fe) ;">

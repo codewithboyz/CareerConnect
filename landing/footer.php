@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/footer.css" />
+<link rel="stylesheet" href="landing/css/footer.css" />
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap"
     rel="stylesheet" />

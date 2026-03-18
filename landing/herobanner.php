@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/herobanner.css" />
+<link rel="stylesheet" href="landing/css/herobanner.css" />
 
 <!-- BEGIN: HeroSection -->
 <section class="hero-section" id="hero">
