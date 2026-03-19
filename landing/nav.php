@@ -103,8 +103,24 @@
                     <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
                     <a href="#" class="btn btn-success register-btn ms-lg-2">Register</a>
 
-                    <div class="profile-wrapper ms-lg-3">
-                        <img src="Asset/Image/testimonials-4.jpg" class="profile-img" alt="Profile" />
+                    <div class="profile-wrapper ms-lg-3 " style="list-style: none;">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                <img src="Asset/Image/testimonials-4.jpg" class="profile-img" alt="Profile" />
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">View Profile</a></li>
+                                <li><a href="#">Bild Resume</a></li>
+                                <li><a href="#">Dawnload CV</a></li>
+                                <li><a href="#">Manage Resume</a></li>
+                                <li><a href="#">My Messages</a></li>
+                                <li><a href="#">My Followings</a></li>
+                                <li><a href="#">Packages</a></li>
+                                <li><a href="#">Payment History</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
                     </div>
                 </div>
 
