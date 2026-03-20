@@ -28,9 +28,22 @@
             <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
 
                 <ul class="navbar-nav mx-auto">
+<<<<<<< HEAD
                     <a class="nav-link" href="index.php">
                         Home
                     </a>
+=======
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                            <li><a href="#">Home Page 1</a></li>
+                            <li><a href="#">Home Page 2</a></li>
+                        </ul>
+                    </li>
+>>>>>>> 7ee5e01 (job section)
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
@@ -38,7 +51,7 @@
                             Jobs
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-                            <li><a href="#">Browse Jobs</a></li>
+                            <li><a href="CareerConnect/job.php">Browse Jobs</a></li>
                             <li><a href="#">Job Details</a></li>
                         </ul>
                     </li>
@@ -125,18 +138,18 @@
 <script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    if (window.innerWidth >= 992) {
-        document.querySelectorAll('.dropdown').forEach(drop => {
-            drop.addEventListener('mouseenter', function() {
-                let menu = this.querySelector('.dropdown-menu');
-                if (menu) menu.classList.add('show');
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.innerWidth >= 992) {
+            document.querySelectorAll('.dropdown').forEach(drop => {
+                drop.addEventListener('mouseenter', function() {
+                    let menu = this.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.add('show');
+                });
+                drop.addEventListener('mouseleave', function() {
+                    let menu = this.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.remove('show');
+                });
             });
-            drop.addEventListener('mouseleave', function() {
-                let menu = this.querySelector('.dropdown-menu');
-                if (menu) menu.classList.remove('show');
-            });
-        });
-    }
-});
+        }
+    });
 </script>
