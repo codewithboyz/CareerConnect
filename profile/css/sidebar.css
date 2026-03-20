@@ -1,0 +1,86 @@
+body {
+    background: #f4f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar container */
+.sidebar-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+}
+
+/* Open to work box */
+.open-work {
+    border: 1px solid #c7f0d8;
+    background: #f1fff6;
+    border-radius: 14px;
+    padding: 12px 15px;
+}
+
+.open-work h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #1a7f4b;
+}
+
+.open-work p {
+    margin: 0;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* Toggle switch */
+.custom-switch {
+    width: 45px;
+    height: 22px;
+    background-color: #22c55e;
+    border: none;
+}
+
+/* User info */
+.user-name {
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.user-email {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Menu */
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #4b5563;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+/* Icon size */
+.menu i {
+    font-size: 16px;
+}
+
+/* Hover */
+.menu a:hover {
+    background: #f1f5ff;
+    color: #2563eb;
+}
+
+/* Active */
+.menu .active a {
+    background: #e0e7ff;
+    color: #2563eb;
+    font-weight: 600;
+}

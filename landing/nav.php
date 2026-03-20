@@ -28,17 +28,9 @@
             <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
 
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-                            <li><a href="#">Home Page 1</a></li>
-                            <li><a href="#">Home Page 2</a></li>
-                            <li><a href="#">Home Page 3</a></li>
-                        </ul>
-                    </li>
+                    <a class="nav-link" href="index.php">
+                        Home
+                    </a>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
@@ -111,7 +103,7 @@
                             </a>
                             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
                                 <li><a href="#">Dashboard</a></li>
-                                <li><a href="#">View Profile</a></li>
+                                <li><a href="editprofile.php">View Profile</a></li>
                                 <li><a href="#">Bild Resume</a></li>
                                 <li><a href="#">Dawnload CV</a></li>
                                 <li><a href="#">Manage Resume</a></li>
