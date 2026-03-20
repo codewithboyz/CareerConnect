@@ -1,0 +1,62 @@
+/* Card */
+.info-card {
+    border-radius: 20px;
+    background: #ffffff;
+    border: none;
+}
+
+/* Section label */
+.section-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+/* Title */
+.section-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Subtitle */
+.section-subtitle {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Upload button */
+.upload-btn {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* Inputs */
+.custom-input {
+    border-radius: 14px !important;
+    padding: 12px 14px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* Email icon inside input */
+.input-icon {
+    position: absolute;
+    right: 15px;
+    top: 38px;
+    color: #10b981;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: 5px;
+}

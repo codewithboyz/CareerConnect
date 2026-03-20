@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="landing/css/nav.css">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top"
+    style=" background: rgba(255, 255, 255, 0.6);backdrop-filter: blur(10px); ">
     <div class="container">
 
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -27,17 +28,9 @@
             <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
 
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-                            <li><a href="#">Home Page 1</a></li>
-                            <li><a href="#">Home Page 2</a></li>
-                            <li><a href="#">Home Page 3</a></li>
-                        </ul>
-                    </li>
+                    <a class="nav-link" href="index.php">
+                        Home
+                    </a>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
@@ -103,8 +96,24 @@
                     <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
                     <a href="#" class="btn btn-success register-btn ms-lg-2">Register</a>
 
-                    <div class="profile-wrapper ms-lg-3">
-                        <img src="Asset/Image/testimonials-4.jpg" class="profile-img" alt="Profile" />
+                    <div class="profile-wrapper ms-lg-3 " style="list-style: none;">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                <img src="Asset/Image/testimonials-4.jpg" class="profile-img" alt="Profile" />
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="editprofile.php">View Profile</a></li>
+                                <li><a href="#">Bild Resume</a></li>
+                                <li><a href="#">Dawnload CV</a></li>
+                                <li><a href="#">Manage Resume</a></li>
+                                <li><a href="#">My Messages</a></li>
+                                <li><a href="#">My Followings</a></li>
+                                <li><a href="#">Packages</a></li>
+                                <li><a href="#">Payment History</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
                     </div>
                 </div>
 
