@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="Asset/css/feature_job.css" />
+<link rel="stylesheet" href="landing/css/feature_job.css" />
 <!-- Featured Jobs Section -->
 <section class="py-5 ">
     <div class="container">
         <div class="text-center">
-            <h5 class="text-success">Here You Can See</h5>
+            <h4 class="text-success">Here You Can See</h4>
             <p class="fs-1"><span class="fw-bold">Featured</span> <span class="text-primary">Jobs</span></p>
         </div>
 
@@ -12,7 +12,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Full Time/Permanent</p>
-                        <h4 class="card-text">Full Stack Designer</h4>
+                        <h5 class="card-text pt-2">Full Stack Designer</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> Barrington</p>
                         </div>
@@ -34,7 +34,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Part Time</p>
-                        <h4 class="card-text">Marketing Specialist</h4>
+                        <h5 class="card-text pt-2">Marketing Specialist</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> New York</p>
                         </div>
@@ -56,7 +56,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Freelance</p>
-                        <h4 class="card-text">UI Engineer</h4>
+                        <h5 class="card-text pt-2">UI Engineer</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> Los Angeles</p>
                         </div>
@@ -78,7 +78,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Contract</p>
-                        <h4 class="card-text">Data Analyst</h4>
+                        <h5 class="card-text pt-2">Data Analyst</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> Chicago</p>
                         </div>
@@ -100,7 +100,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Internship</p>
-                        <h4 class="card-text">Junior QA Engineer</h4>
+                        <h5 class="card-text pt-2">Junior QA Engineer</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> Austin</p>
                         </div>
@@ -122,7 +122,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Remote</p>
-                        <h4 class="card-text">Product Manager</h4>
+                        <h5 class="card-text pt-2">Product Manager</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> Remote</p>
                         </div>
@@ -144,7 +144,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Hybrid</p>
-                        <h4 class="card-text">DevOps Engineer</h4>
+                        <h5 class="card-text pt-2">DevOps Engineer</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> Seattle</p>
                         </div>
@@ -166,7 +166,7 @@
                 <div class="card border-0 shadow rounded-5 py-3 px-2">
                     <div class="card-body">
                         <p class="card-title"><i class="fa-solid fa-briefcase"></i> Full Time</p>
-                        <h4 class="card-text">Mobile App Developer</h4>
+                        <h5 class="card-text pt-2">Mobile App Developer</h5>
                         <div class="text-primary loc">
                             <p class="card-text"><i class="fa-solid fa-location-dot"></i> Miami</p>
                         </div>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/Categoriwise_job.css">
+<link rel="stylesheet" href="landing/css/Categoriwise_job.css">
 
 <section class="category-section">
 
@@ -67,7 +67,7 @@
         </div>
 
         <div class="text-center">
-            <button class="view-btn">View All Categories</button>
+            <button class="view-btn btn-primaty">View All Categories</button>
         </div>
 
     </div>

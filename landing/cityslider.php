@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="Asset/css/cityslider.css" />
+<link rel="stylesheet" href="landing/css/cityslider.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <section>
-    <div style="background-color: #f8f9fa;margin-top: 30px;">
+    <div style="background: linear-gradient(to right, #f3f7ff, #e8f8fe) ;">
         <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
 
             <p class=" sub-title text-center">Choose Your Location</p>
@@ -160,36 +160,36 @@
 
 
 <script>
-var swiper = new Swiper(".mySlider", {
+    var swiper = new Swiper(".mySlider", {
 
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
 
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-
-    breakpoints: {
-
-        0: {
-            slidesPerView: 1
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
 
-        576: {
-            slidesPerView: 2
-        },
+        breakpoints: {
 
-        768: {
-            slidesPerView: 3
-        },
+            0: {
+                slidesPerView: 1
+            },
 
-        992: {
-            slidesPerView: 4
+            576: {
+                slidesPerView: 2
+            },
+
+            768: {
+                slidesPerView: 3
+            },
+
+            992: {
+                slidesPerView: 4
+            }
+
         }
 
-    }
-
-});
+    });
 </script>

@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="Asset/css/ourvideo.css">
+<link rel="stylesheet" href="landing/css/ourvideo.css">
 <section>
-    <div style="background-color: #f8f9fa; height: 500px; margin-top: 30px;">
+    <div>
         <div class=" container" style="padding-top: 40px; padding-bottom: 40px;">
             <div class="row align-items-center">
 
@@ -34,7 +34,7 @@
 
                         <img src="Asset/Image/jobscarch.jpg" class="video-img">
 
-                        <button class="play-btn" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <button class="play-btn text-center px-4" data-bs-toggle="modal" data-bs-target="#videoModal">
                             ▶
                         </button>
 
@@ -73,7 +73,7 @@ const iframe = document.getElementById('video')
 
 videoModal.addEventListener('show.bs.modal', function() {
 
-    iframe.src = "https://www.youtube.com/embed/Q_DsV0opv94"
+    iframe.src = "https://www.youtube.com/embed/eONZdoyQn30"
 
 })
 

@@ -1,0 +1,182 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0px;
+}
+
+
+
+/* Logo */
+.logo-main {
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.logo-bold {
+  font-weight: 700;
+  font-size: 20px;
+  color: #111;
+}
+
+.logo-sub {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #777;
+  margin-top: -4px;
+}
+
+/* Navbar Links Desktop */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333;
+  margin: 0 8px;
+  position: relative;
+  padding: 12px 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.show {
+  color: #4f46e5;
+}
+
+/* Buttons */
+.sign-btn {
+  border-radius: 25px;
+  padding: 8px 24px;
+  font-weight: 500;
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.sign-btn:hover {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.register-btn {
+  border-radius: 25px;
+  padding: 8px 24px;
+  font-weight: 500;
+  background-color: #10b981;
+  border: none;
+}
+
+/* Profile */
+.profile-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Dropdown */
+.custom-dropdown {
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.custom-dropdown li {
+  list-style: none;
+}
+
+.custom-dropdown li a {
+  display: block;
+  padding: 8px 18px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.custom-dropdown li a:hover {
+  background: #f5f5f5;
+  color: #4f46e5;
+}
+
+/* =========================================
+   Mobile Specific Styles (100% Video Match) 
+   ========================================= */
+@media (max-width: 991px) {
+  .offcanvas {
+    max-width: 320px;
+  }
+
+  .offcanvas-body {
+    padding-top: 0;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: left; /* Text remains on left */
+  }
+
+  /* List items get bottom border as separator */
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+  }
+
+  /* Anchor tag takes full width, flex pushes arrow to the right */
+  .navbar-nav .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* Make dropdown behave like a true block accordion */
+  .custom-dropdown {
+    position: static !important; /* Forces dropdown to push items down */
+    float: none;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 10px 0;
+    margin-top: 0;
+    border: none;
+    border-top: 2px solid #4f46e5 !important; /* Blue top line from video */
+    border-radius: 0;
+  }
+
+  .custom-dropdown li a {
+    padding: 10px 15px; /* Slight indent for sub-menu */
+    color: #666;
+  }
+
+  /* Full width buttons at the bottom */
+  .nav-buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+  }
+
+  .sign-btn,
+  .register-btn {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  /* Profile Box exactly like video (Left Aligned inside box) */
+  .profile-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 0 !important;
+  }
+}
+
+/* =========================================
+   Desktop Specific Styles 
+   ========================================= */
+@media (min-width: 992px) {
+  .shadow-sm-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+}

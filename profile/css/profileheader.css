@@ -1,0 +1,85 @@
+/* Card */
+.profile-card {
+    border-radius: 20px;
+    background: #ffffff;
+    border: none;
+}
+
+/* Layout */
+.profile-wrapper {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* IMAGE FIX */
+.profile-left img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 18px; /* NOT circle */
+}
+
+/* Update photo BELOW image */
+.update-photo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2563eb;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.profile-right {
+    flex: 1;
+}
+
+/* Badge */
+.profile-badge {
+    background: #e0e7ff;
+    color: #2563eb;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Name */
+.profile-name {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.profile-desc {
+    color: #6b7280;
+    max-width: 600px;
+    font-size: 15px;
+}
+
+/* Tags */
+.profile-tags {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.profile-tags span {
+    background: #e5e7eb;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #374151;
+}

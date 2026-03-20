@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="Asset/css/testimonial.css">
+<link rel="stylesheet" href="landing/css/testimonial.css">
 
 
 <section class="testimonial-section py-5">

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-company {
+  background: linear-gradient(to right, #f3f7ff, #e8f8fe);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.company_card {
+  border: none;
+  border-radius: 25px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.company_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(79, 128, 242, 0.25);
+}
+
+/* Image */
+.card_image img {
+  height: 60px;
+  object-fit: contain;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Body */
+/* .card-body {
+  text-align: center;
+} */
+
+/* Location */
+.location {
+  color: #2563eb;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* Open Job */
+.open-job {
+  margin-top: 8px;
+  border-radius: 8px;
+  background-color: #e7f1ff;
+  font-size: 14px;
+}
+
+/* Remove link underline */
+.row a {
+  text-decoration: none;
+}
+
+/* Button */
+.view-all-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .card_image img {
+    height: 50px;
+  }
+
+  .view-all-btn {
+    width: 80%;
+  }
+}
