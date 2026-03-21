@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="landing/css/nav.css">
 
 <nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top"
-    style=" background: rgba(255, 255, 255, 0.6);backdrop-filter: blur(10px); ">
+    style=" background: rgba(255, 255, 255, 0.6); ">
     <div class="container">
 
         <a class="navbar-brand d-flex align-items-center" href="#">
