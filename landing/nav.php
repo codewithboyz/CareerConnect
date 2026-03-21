@@ -62,6 +62,7 @@
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
               <li><a href="#">Candidate List</a></li>
               <li><a href="#">Candidate Profile</a></li>
+              <li><a href="Candidate-Dashboard.php">Candidate Dashboard</a></li>
             </ul>
           </li>
 
