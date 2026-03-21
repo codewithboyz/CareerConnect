@@ -38,8 +38,8 @@
               Jobs
             </a>
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-              <li><a href="#">Browse Jobs</a></li>
-              <li><a href="#">Job Details</a></li>
+              <li><a href="job.php">Browse Jobs</a></li>
+              <li><a href="job_single.php">Job Details</a></li>
             </ul>
           </li>
 
@@ -49,7 +49,7 @@
               Employer
             </a>
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-              <li><a href="#">Employer List</a></li>
+              <li><a href="employer.php">Employer List</a></li>
               <li><a href="#">Employer Details</a></li>
             </ul>
           </li>
@@ -60,7 +60,7 @@
               Candidate
             </a>
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-              <li><a href="#">Candidate List</a></li>
+              <li><a href="candidate.php">Candidate List</a></li>
               <li><a href="#">Candidate Profile</a></li>
               <li><a href="Candidate-Dashboard.php">Candidate Dashboard</a></li>
             </ul>
@@ -94,8 +94,8 @@
         </ul>
 
         <div class="nav-buttons d-flex align-items-center">
-          <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
-          <a href="#" class="btn btn-success register-btn ms-lg-2">Register</a>
+          <a href="#" class="btn btn-outline-primary rounded-pill sign-btn">Sign in</a>
+          <a href="#" class="btn btn-success rounded-pill register-btn ms-lg-2">Register</a>
 
           <div class="profile-wrapper ms-lg-3 " style="list-style: none;">
             <li class="nav-item dropdown">

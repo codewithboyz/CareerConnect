@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Career Connect | Jobs</title>
-  <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="job_pages/css/jobsection.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
+  <title>Career Connect | Employer</title>
+  <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="employer_pages/css/employer_list.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
   <div>
     <?php include "landing/nav.php"; ?>
-    <?php include "job_pages/jobsection.php"; ?>
+    <?php include "employer_pages/employer_list.php"; ?>
     <?php include "landing/footer.php"; ?>
   </div>
 </body>

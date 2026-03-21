@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="css/jobsection.css">
-
 <section class="py-5 bg-light">
   <div class="container">
     <div class="row g-4">
@@ -456,7 +454,7 @@
 
           <div class="d-flex mt-3">
             <div class="me-3">
-              <img src="../Asset/Image/emplogo1.jpg"
+              <img src="Asset/Image/emplogo1.jpg"
                 width="60"
                 class="rounded-4 shadow-sm">
             </div>
@@ -510,7 +508,7 @@
 
           <div class="d-flex mt-3">
             <div class="me-3">
-              <img src="../Asset/Image/emplogo1.jpg"
+              <img src="Asset/Image/emplogo1.jpg"
                 width="60"
                 class="rounded-4 shadow-sm">
             </div>
@@ -563,7 +561,7 @@
 
           <div class="d-flex mt-3">
             <div class="me-3">
-              <img src="../Asset/Image/emplogo1.jpg"
+              <img src="Asset/Image/emplogo1.jpg"
                 width="60"
                 class="rounded-4 shadow-sm">
             </div>
@@ -617,7 +615,7 @@
 
           <div class="d-flex mt-3">
             <div class="me-3">
-              <img src="../Asset/Image/emplogo1.jpg"
+              <img src="Asset/Image/emplogo1.jpg"
                 width="60"
                 class="rounded-4 shadow-sm">
             </div>
@@ -670,7 +668,7 @@
 
           <div class="d-flex mt-3">
             <div class="me-3">
-              <img src="../Asset/Image/emplogo1.jpg"
+              <img src="Asset/Image/emplogo1.jpg"
                 width="60"
                 class="rounded-4 shadow-sm">
             </div>
@@ -738,4 +736,4 @@
   </div>
 
 </section>
-<script src="../Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+<script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
