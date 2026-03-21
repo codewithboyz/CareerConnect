@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="landing/css/nav.css">
 
 <nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top"
-  style=" background: rgba(255, 255, 255, 0.6);backdrop-filter: blur(10px); ">
+  style=" background: rgba(255, 255, 255, 0.6); ">
   <div class="container">
 
     <a class="navbar-brand d-flex align-items-center" href="#">
@@ -28,18 +28,18 @@
       <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
 
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Home</a>
-          </li>
+          <a class="nav-link" href="index.php">
+            Home
+          </a>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
               data-bs-auto-close="outside">
-              Job
+              Jobs
             </a>
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-              <li><a href="/CareerConnect/job.php">Job List View</a></li>
-              <li><a href="#">Job Single</a></li>
+              <li><a href="#">Browse Jobs</a></li>
+              <li><a href="#">Job Details</a></li>
             </ul>
           </li>
 
@@ -62,6 +62,7 @@
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
               <li><a href="#">Candidate List</a></li>
               <li><a href="#">Candidate Profile</a></li>
+              <li><a href="Candidate-Dashboard.php">Candidate Dashboard</a></li>
             </ul>
           </li>
 
@@ -77,7 +78,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="Contactus.php">Contact Us</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -93,8 +94,8 @@
         </ul>
 
         <div class="nav-buttons d-flex align-items-center">
-          <a href="#" class="btn btn-outline-primary rounded-5 sign-btn">Sign in</a>
-          <a href="#" class="btn btn-success register-btn rounded-5 ms-lg-2">Register</a>
+          <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
+          <a href="#" class="btn btn-success register-btn ms-lg-2">Register</a>
 
           <div class="profile-wrapper ms-lg-3 " style="list-style: none;">
             <li class="nav-item dropdown">
