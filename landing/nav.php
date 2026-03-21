@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="landing/css/nav.css">
-  <nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top"
-    style=" background: rgba(255, 255, 255, 0.6); ">
+
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top"
+  style=" background: rgba(255, 255, 255, 0.6);backdrop-filter: blur(10px); ">
   <div class="container">
 
     <div class="container">
