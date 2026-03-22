@@ -1,115 +1,229 @@
-<link rel="stylesheet" href="landing/css/footer.css" />
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap"
-    rel="stylesheet" />
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
-<style>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+<style data-purpose="custom-variables">
+:root {
+    --footer-bg: #1e293b;
+    /* Deep Navy/Slate background */
+    --footer-text: #94a3b8;
+    /* Muted text color */
+    --footer-heading: #ffffff;
+    --accent-green: #22c55e;
+    /* Hover color from branding */
+    --bottom-bar-border: rgba(255, 255, 255, 0.1);
+    --social-bg: rgba(255, 255, 255, 0.1);
+}
 </style>
-<style>
+<style data-purpose="layout-and-typography">
+body {
+    font-family: 'Inter', sans-serif;
+}
 
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.footer-heading {
+    color: var(--footer-heading);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 12px;
+}
+
+.footer-links-list a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-links-list a:hover {
+    color: var(--accent-green);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.contact-info-item i {
+    color: #3b82f6;
+    /* Blue icon color as seen in reference */
+    margin-right: 12px;
+    margin-top: 4px;
+    font-size: 1rem;
+}
+
+.social-icons-wrapper {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.social-icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--social-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.social-icon-btn:hover {
+    background-color: var(--accent-green);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom-bar {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    padding: 20px 0;
+}
+
+.copyright-text {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.copyright-text a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.payment-methods-img {
+    max-height: 24px;
+    width: auto;
+    object-fit: contain;
+}
+
+.payment-methods-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+}
 </style>
 
 <!-- Main Footer Container -->
-<footer class="job-portal-footer">
+<footer class="main-footer" id="main-footer-section">
     <div class="container">
-        <div class="row">
-            <!-- Quick Links Section -->
-            <div class="col-12 col-md-3">
+        <div class="row gy-4">
+            <!-- BEGIN: Quick Links Column -->
+            <div class="col-lg-2 col-md-4" data-purpose="footer-column-links">
                 <h5 class="footer-heading">Quick Links</h5>
-                <ul class="footer-links">
+                <ul class="footer-links-list">
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Browse Jobs</a></li>
-                    <li><a href="#">Post a Job</a></li>
-                    <li><a href="#">Success Stories</a></li>
-                    <li><a href="#">Pricing Plans</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
                 </ul>
             </div>
-            <!-- Functional Area Section -->
-            <div class="col-12 col-md-3">
+            <!-- END: Quick Links Column -->
+            <!-- BEGIN: Functional Area Column -->
+            <div class="col-lg-3 col-md-4" data-purpose="footer-column-functional">
                 <h5 class="footer-heading">Jobs By Functional Area</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Information Technology</a></li>
-                    <li><a href="#">Sales &amp; Marketing</a></li>
-                    <li><a href="#">Customer Service</a></li>
-                    <li><a href="#">Finance &amp; Accounting</a></li>
-                    <li><a href="#">Human Resources</a></li>
-                    <li><a href="#">Education &amp; Training</a></li>
+                <ul class="footer-links-list">
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Business Management</a></li>
+                    <li><a href="#">Software &amp; Web Development</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Database Administration</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Web Developer</a></li>
                 </ul>
             </div>
-            <!-- Industry Section -->
-            <div class="col-12 col-md-3">
+            <!-- END: Functional Area Column -->
+            <!-- BEGIN: Industry Column -->
+            <div class="col-lg-3 col-md-4" data-purpose="footer-column-industry">
                 <h5 class="footer-heading">Jobs By Industry</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Software Development</a></li>
-                    <li><a href="#">Healthcare</a></li>
-                    <li><a href="#">Manufacturing</a></li>
-                    <li><a href="#">Banking &amp; Finance</a></li>
-                    <li><a href="#">Retail &amp; eCommerce</a></li>
-                    <li><a href="#">Telecommunications</a></li>
+                <ul class="footer-links-list">
+                    <li><a href="#">Courier/Logistics</a></li>
+                    <li><a href="#">Travel/Tourism/Transportation</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Automobile</a></li>
+                    <li><a href="#">Advertising/PR</a></li>
+                    <li><a href="#">Health &amp; Fitness</a></li>
+                    <li><a href="#">Information Technology</a></li>
                 </ul>
             </div>
-            <!-- Contact Section -->
-            <div class="col-12 col-md-3">
+            <!-- END: Industry Column -->
+            <!-- BEGIN: Contact Column -->
+            <div class="col-lg-4 col-md-12" data-purpose="footer-column-contact">
                 <h5 class="footer-heading">Contact Us</h5>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="material-symbols-outlined">location_on</span>
-                        <span>123 Job Tower, Career Ave, NY 10001</span>
+                <div class="contact-info-container">
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>651 N Broad St, Suite 201, Middletown, Zip Code 19709, New Castle, Delaware,
+                            USA.</span>
                     </div>
-                    <div class="contact-item">
-                        <span class="material-symbols-outlined">mail</span>
-                        <span>support@jobportal.com</span>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@jobsportal.com</span>
                     </div>
-                    <div class="contact-item">
-                        <span class="material-symbols-outlined">call</span>
-                        <span>+1 (555) 000-1234</span>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (302) 555-0123</span>
                     </div>
                 </div>
-                <div class="social-links">
-                    <a class="social-icon" href="#">
-                        <svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18">
-                            <path
-                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a class="social-icon" href="#">
-                        <svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18">
-                            <path
-                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a class="social-icon" href="#">
-                        <svg fill="currentColor" height="18" viewbox="0 0 24 24" width="18">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
-                            </path>
-                        </svg>
-                    </a>
+                <!-- Social Media Icons -->
+                <div class="social-icons-wrapper">
+                    <a aria-label="Facebook" class="social-icon-btn" href="#"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a aria-label="X (Twitter)" class="social-icon-btn" href="#"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a aria-label="Instagram" class="social-icon-btn" href="#"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a aria-label="LinkedIn" class="social-icon-btn" href="#"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a aria-label="YouTube" class="social-icon-btn" href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Secondary Bottom Bar -->
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 text-center">
-                    <p class="copyright-text">© 2024 JobPortal. All rights reserved. Built with pride.</p>
-                </div>
-            </div>
+            <!-- END: Contact Column -->
         </div>
     </div>
 </footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: CopyrightBar -->
+<section class="footer-bottom-bar" id="copyright-bar">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Copyright Text -->
+            <div class="col-12 text-center mb-0">
+                <p class="copyright-text">
+                    Copyright © 2025 CareerConnect. All rights reserved. Design by: codewithboys
+                </p>
+            </div>
+            <!-- Payment Logos -->
+        </div>
+    </div>
+</section>
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="landing/css/nav.css">
 
 <nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top"
-    style=" background: rgba(255, 255, 255, 0.6);backdrop-filter: blur(10px); ">
+    style=" background: rgba(255, 255, 255, 0.6); ">
     <div class="container">
 
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -38,8 +38,8 @@
                             Jobs
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-                            <li><a href="#">Browse Jobs</a></li>
-                            <li><a href="#">Job Details</a></li>
+                            <li><a href="job.php">Browse Jobs</a></li>
+                            <li><a href="job_single.php">Job Details</a></li>
                         </ul>
                     </li>
 
@@ -49,7 +49,7 @@
                             Employer
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-                            <li><a href="#">Employer List</a></li>
+                            <li><a href="employer.php">Employer List</a></li>
                             <li><a href="#">Employer Details</a></li>
                         </ul>
                     </li>
@@ -60,8 +60,9 @@
                             Candidate
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-                            <li><a href="#">Candidate List</a></li>
+                            <li><a href="candidate.php">Candidate List</a></li>
                             <li><a href="#">Candidate Profile</a></li>
+                            <li><a href="Candidate-Dashboard.php">Candidate Dashboard</a></li>
                         </ul>
                     </li>
 
@@ -77,7 +78,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="Contactus.php">Contact Us</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -86,15 +87,15 @@
                             Pages
                         </a>
                         <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-                            <li><a href="#">About</a></li>
+                            <li><a href="aboutus.php">About</a></li>
                             <li><a href="#">FAQ</a></li>
                         </ul>
                     </li>
                 </ul>
 
                 <div class="nav-buttons d-flex align-items-center">
-                    <a href="#" class="btn btn-outline-primary sign-btn">Sign in</a>
-                    <a href="#" class="btn btn-success register-btn ms-lg-2">Register</a>
+                    <a href="login.php" class="btn btn-outline-primary rounded-pill sign-btn">Sign in</a>
+                    <a href="#" class="btn btn-success rounded-pill register-btn ms-lg-2">Register</a>
 
                     <div class="profile-wrapper ms-lg-3 " style="list-style: none;">
                         <li class="nav-item dropdown">
