@@ -21,13 +21,13 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <h4 class="p-3">CareerConnect</h4>
-        <a href="#"><i class="bi bi-grid-fill pe-2"></i>Dashboard</a>
-        <a href="#"><i class="fa-solid fa-user-pen pe-2"></i>Edit Account Details</a>
-        <a href="#"><i class="fa-solid fa-building pe-2"></i>Company Public Profile</a>
-        <a href="#"><i class="fa-solid fa-plus pe-2"></i>Post Jobs</a>
-        <a href="#"><i class="fa-solid fa-briefcase pe-2"></i>Manage Jobs</a>
-        <a href="#"><i class="fa-solid fa-envelope pe-2"></i>Company Message</a>
-        <a href="#"><i class="fa-solid fa-users pe-2"></i>Company Followers</a>
+        <a href="#" class="emplink"><i class="bi bi-grid-fill pe-2"></i>Dashboard</a>
+        <a href="#" class="emplink"><i class="fa-solid fa-user-pen pe-2"></i>Edit Account Details</a>
+        <a href="#" class="emplink"><i class="fa-solid fa-building pe-2"></i>Company Public Profile</a>
+        <a href="#" class="emplink"><i class="fa-solid fa-plus pe-2"></i>Post Jobs</a>
+        <a href="#" class="emplink"><i class="fa-solid fa-briefcase pe-2"></i>Manage Jobs</a>
+        <a href="#" class="emplink"><i class="fa-solid fa-envelope pe-2"></i>Company Message</a>
+        <a href="#" class="emplink"><i class="fa-solid fa-users pe-2"></i>Company Followers</a>
         <a href="#" class="text-danger"><i class="fa-solid fa-right-from-bracket pe-2 "></i>Logout</a>
     </div>
 
@@ -40,55 +40,55 @@
         </div>
         <div class="row g-4 mb-5">
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="stats-card bg-primary text-white">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <h6>Total Posts</h6>
-                    <h3>3</h3>
+            <div class="col-sm-6 col-lg-3">
+                <div class="stats-card bg-primary text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6>Total Posts</h6>
+                            <h3>3</h3>
+                        </div>
+                        <i class="fa fa-file-alt fa-2x"></i>
+                    </div>
                 </div>
-                <i class="fa fa-file-alt fa-2x"></i>
             </div>
-        </div>
-    </div>
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="stats-card bg-success text-white">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <h6>Total Vacancy</h6>
-                    <h3>5</h3>
+            <div class="col-sm-6 col-lg-3">
+                <div class="stats-card bg-success text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6>Total Vacancy</h6>
+                            <h3>5</h3>
+                        </div>
+                        <i class="fa fa-briefcase fa-2x"></i>
+                    </div>
                 </div>
-                <i class="fa fa-briefcase fa-2x"></i>
             </div>
-        </div>
-    </div>
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="stats-card bg-warning text-dark">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <h6>Total Applications</h6>
-                    <h3>3</h3>
+            <div class="col-sm-6 col-lg-3">
+                <div class="stats-card bg-warning text-dark">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6>Total Applications</h6>
+                            <h3>3</h3>
+                        </div>
+                        <i class="fa fa-users fa-2x"></i>
+                    </div>
                 </div>
-                <i class="fa fa-users fa-2x"></i>
             </div>
-        </div>
-    </div>
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="stats-card bg-danger text-white">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <h6>Followers</h6>
-                    <h3>99</h3>
+            <div class="col-sm-6 col-lg-3">
+                <div class="stats-card bg-danger text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6>Followers</h6>
+                            <h3>99</h3>
+                        </div>
+                        <i class="fa fa-heart fa-2x"></i>
+                    </div>
                 </div>
-                <i class="fa fa-heart fa-2x"></i>
             </div>
-        </div>
-    </div>
 
-</div>
+        </div>
         <!-- ================= FRONTEND ================= -->
         <div class="card card-box p-3 mb-4">
             <h5>Frontend Developers</h5>
@@ -213,6 +213,7 @@
     <script>
         const menuBtn = document.getElementById('menuBtn');
         const sidebar = document.getElementById('sidebar');
+        const links = document.querySelectorAll('.emplink');
 
         menuBtn.onclick = () => sidebar.classList.toggle('show');
 
@@ -227,6 +228,15 @@
             if (text.includes("pending")) row.classList.add("status-pending");
             else if (text.includes("shortlisted") || text.includes("accepted")) row.classList.add("status-success");
         });
+
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                // remove the color from all link
+                links.forEach(lk => lk.style.color = '#b4b4b7');
+                //add the color from click link
+                this.style.color = 'blue';  
+            })
+        })
     </script>
 
 </body>
