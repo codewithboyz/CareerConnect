@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Seeker Dashboard</title>
     <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="candidate-dashboard/candidate-dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -105,7 +106,7 @@
                     <div class="ploc">Bainbridge Island, Washington, United States of America</div>
                     <div class="pcontact d-flex">
                         <p class="fs-6"><i class="bi bi-telephone-fill"></i> +1 234 567 890</p>
-                       <p class="fs-6"><i class="bi bi-envelope-fill pe-2"></i>jobseeker123@gmail.com</p>
+                        <p class="fs-6"><i class="bi bi-envelope-fill pe-2"></i>jobseeker123@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -282,7 +283,7 @@
                 </div>
             </div>
         </div>
-        
+
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -334,7 +335,7 @@
             passive: true
         });
     </script>
-    
+
 </body>
 
 </html>
