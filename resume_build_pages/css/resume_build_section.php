@@ -1,3 +1,9 @@
+<head>
+  <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resume_build_pages/css/resume_build_sec.css">
+</head>
+
+
 <div class="d-flex flex-column gap-4">
 
   <div class="card rounded-5 border-0 shadow p-3">

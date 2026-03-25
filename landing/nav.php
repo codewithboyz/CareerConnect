@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="landing/css/nav.css">
+<link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
 
 <nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top" style=" background: rgba(255, 255, 255, 0.6); ">
   <div class="container">
@@ -50,16 +51,20 @@
               <li><a href="candidate.php">Candidate List</a></li>
               <li><a href="#">Candidate Profile</a></li>
               <li><a href="Candidate-Dashboard.php">Candidate Dashboard</a></li>
+              <li><a href="editprofile.php">Edit Profile</a></li>
+              <li><a href="build_resume.php">Build Resume</a></li>
+              <li><a href="public_profile.php">Public Profile</a></li>
+              <li><a href="download_cv.php">Download CV</a></li>
             </ul>
           </li>
 
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
               <li><a href="#">Blog Grid</a></li>
               <li><a href="#">Blog Details</a></li>
             </ul>
-          </li>
+          </li> -->
 
           <li class="nav-item"><a class="nav-link" href="Contactus.php">Contact Us</a></li>
 

@@ -9,9 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css"> -->
 
-  <link rel="stylesheet" href="resume_build_pages/css/resume_build_sec.css">
+  <!-- <link rel="stylesheet" href="resume_build_pages/css/resume_build_sec.css"> -->
 
   <style>
     body {
@@ -26,10 +26,8 @@
 </head>
 
 <body>
-
-  <?php include('landing/nav.php');
-  ?>
-
+  
+<?php include("landing/nav.php"); ?>
   <div class="container mt-4 mb-5">
     <div class="row">
 
@@ -43,7 +41,7 @@
           <i class="fa-solid fa-bars me-2"></i> Menu
         </button>
 
-        <?php include('resume_build_pages/resume_build_section.php'); ?>
+        <?php include('resume_build_pages/css/resume_build_section.php'); ?>
 
       </main>
 
