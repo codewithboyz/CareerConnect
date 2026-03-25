@@ -68,18 +68,19 @@ body {
    ========================================= */
 
 .form-check-input.prf-switch {
-  width: 48px;
-  height: 25px;
-  border-radius: 25px;
+  width: 48px !important;
+  height: 25px !important;
+  border-radius: 25px !important;
   background-color: #e5e7eb !important;
   background-image: none !important;
-  border: none;
+  border: none !important;
   cursor: pointer;
   position: relative;
   outline: none;
   box-shadow: none !important;
   -webkit-appearance: none;
   appearance: none;
+  box-sizing: border-box;
 }
 
 .form-check-input.prf-switch::before {
