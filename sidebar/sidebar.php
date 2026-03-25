@@ -24,8 +24,8 @@ $dismiss_attr = isset($is_mobile) && $is_mobile ? 'data-bs-dismiss="offcanvas"' 
     <li class="<?= ($current_page == 'Candidate-Dashboard.php') ? 'active' : ''; ?>">
       <a href="Candidate-Dashboard.php" <?= $dismiss_attr; ?>><i class="fa fa-gauge me-2"></i>Dashboard</a>
     </li>
-    <li class="<?= ($current_page == 'edit_profile.php') ? 'active' : ''; ?>">
-      <a href="edit_profile.php" <?= $dismiss_attr; ?>><i class="fa fa-user-pen me-2"></i>Edit Profile</a>
+    <li class="<?= ($current_page == 'editprofile.php') ? 'active' : ''; ?>">
+      <a href="editprofile.php" <?= $dismiss_attr; ?>><i class="fa fa-user-pen me-2"></i>Edit Profile</a>
     </li>
     <li class="<?= ($current_page == 'build_resume.php') ? 'active' : ''; ?>">
       <a href="build_resume.php" <?= $dismiss_attr; ?>><i class="fa fa-file-lines me-2"></i>Build Resume</a>

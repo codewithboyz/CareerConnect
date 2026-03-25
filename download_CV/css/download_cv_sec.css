@@ -41,6 +41,7 @@ body {
   background: #e7efff;
   color: #2563eb;
   font-weight: 500;
+  border-left: 5px solid #2563eb;
 }
 
 /* Icons */
