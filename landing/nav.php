@@ -85,7 +85,7 @@
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="editprofile.php">View Profile</a></li>
                 <li><a href="build_resume.php">Build Resume</a></li>
-                <li><a href="#">Download CV</a></li>
+                <li><a href="download_cv.php">Download CV</a></li>
                 <li><a href="#">Manage Resume</a></li>
                 <li><a href="#">My Messages</a></li>
                 <li><a href="#">My Followings</a></li>
