@@ -1,400 +1,538 @@
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<title>Skyline Digital - Company Profile | Slate &amp; Emerald Careers</title>
-<!-- Tailwind CSS v3 CDN -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Google Fonts: Plus Jakarta Sans -->
-<link href="https://fonts.googleapis.com" rel="preconnect" />
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
-    rel="stylesheet" />
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    emerald: {
-                        50: '#eff6ff',
-                        100: '#dbeafe',
-                        200: '#bfdbfe',
-                        300: '#93c5fd',
-                        400: '#60a5fa',
-                        500: '#3b82f6',
-                        600: '#2563eb',
-                        700: '#1d4ed8',
-                        800: '#1e40af',
-                        900: '#1e3a8a',
-                    },
-                },
-                fontFamily: {
-                    'plus-jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
-                },
-                borderRadius: {
-                    'eight': '8px',
-                }
-            }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Digital - Jobs Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        /* --- Design Tokens --- */
+        :root {
+            --color-primary: #0066ff;
+            --color-primary-soft: #e5f0ff;
+            --color-success: #20c997;
+            --color-bg-main: #f4f7fa;
+            --color-bg-section: #f8fafd;
+            --color-text-main: #1a1f36;
+            --color-text-muted: #6c757d;
+            --color-border: #e9ecef;
+            --color-footer: #1c2331;
+
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-pill: 50px;
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.03);
+            --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
-    }
-</script>
-<style data-purpose="typography">
-    body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        -webkit-font-smoothing: antialiased;
-    }
-</style>
-<style data-purpose="layout-tweaks">
-    .hero-gradient {
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://placehold.co/1920x600/e2e8f0/64748b?text=Office+Culture');
-        background-size: cover;
-        background-position: center;
-    }
 
-    .card-shadow {
-        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
-    }
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet" />
+        /* --- Base Styles --- */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg-main)!important;
+            color: var(--color-text-main)!important;
+            -webkit-font-smoothing: antialiased;
+        }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
 
-<body class="bg-slate-50 text-slate-900">
-    <!-- BEGIN: TopNavBar -->
+        a {
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .text-muted-custom {
+            color: var(--color-text-muted)!important;
+            font-size: 0.95rem;
+        }
+
+        /* --- Navigation --- */
+        .navbar {
+            background-color: #fff!important;
+            border-bottom: 1px solid var(--color-border)!important;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: #333!important;
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary)!important;
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            border-radius: var(--radius-pill)!important;
+            font-weight: 500;
+            padding: 0.5rem 1.25rem;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary)!important;
+            border-color: var(--color-primary)!important;
+        }
+
+        .btn-outline-primary {
+            color: var(--color-primary)!important;
+            border-color: var(--color-primary)!important;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--color-primary)!important;
+            color: #fff;
+        }
+
+        .btn-success {
+            background-color: var(--color-success)!important;
+            border: none;
+            color: white;
+        }
+
+        .btn-soft-primary {
+            background-color: var(--color-primary-soft)!important;
+            color: var(--color-primary)!important;
+            border: none;
+        }
+
+        .btn-soft-primary:hover {
+            background-color: #d1e3ff!important;
+        }
+
+        /* --- Cards --- */
+        .ui-card {
+            background: #fff;
+            border-radius: var(--radius-lg)!important;
+            border: none;
+            box-shadow: var(--shadow-soft)!important;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- Hero & Overlap Header --- */
+        .hero-banner {
+            height: 300px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat !important;
+        }
+
+        .header-overlap {
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .company-logo-box {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            border-radius: var(--radius-md)!important;
+            box-shadow: var(--shadow-soft)!important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- Main Content Specifics --- */
+        .ui-badge {
+            background-color: var(--color-primary-soft)!important;
+            color: var(--color-primary)!important;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-pill)!important;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .feature-box {
+            background-color: var(--color-bg-section)!important;
+            border-radius: var(--radius-md)!important;
+            padding: 1.5rem;
+            height: 100%;
+            transition: transform 0.2s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-soft)!important;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: var(--radius-md)!important;
+        }
+
+        /* --- Open Roles Section --- */
+        .open-roles-section {
+            background-color: var(--color-bg-section)!important;
+            padding: 5rem 0;
+            border-top: 1px solid var(--color-border)!important;
+        }
+
+        .job-card {
+            border-radius: var(--radius-lg)!important;
+            border: none;
+            box-shadow: var(--shadow-soft)!important;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover)!important;
+        }
+
+        .badge-soft-success {
+            background-color: #dcfce7!important;
+            color: #166534;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: var(--radius-pill)!important;
+            font-size: 0.8rem;
+        }
+
+        .badge-soft-danger {
+            background-color: #fee2e2!important;
+            color: #b91c1c!important;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: var(--radius-pill)!important;
+            font-size: 0.8rem;
+        }
+
+        .urgent-icon {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            background-color: #ef4444!important;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .job-logo-box {
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-bg-section)!important;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--color-border)!important;
+            font-size: 1.2rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--color-footer)!important;
+            color: #fff;
+            padding-top: 4rem;
+        }
+
+        .footer-heading {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-link {
+            color: #a0aec0!important;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .footer-link:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1)!important;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #a0aec0!important;
+        }
+    </style>
+</head>
+
+<body>
+
     <?php include "landing/nav.php" ?>
-    <!-- END: TopNavBar -->
-    <main class="pt-16">
-        <!-- BEGIN: HeroSection -->
-        <section class="relative" data-purpose="company-hero">
-            <div class="h-64 md:h-80 hero-gradient"></div>
-            <div class="max-w-5xl mx-auto px-6 -mt-20 relative z-10">
+
+    <div class="hero-banner"></div>
+
+    <main>
+        <div class="container header-overlap mb-4">
+            <div class="ui-card py-4">
                 <div
-                    class="bg-white p-8 rounded-2xl shadow-xl flex flex-col md:flex-row items-center md:items-end justify-between gap-6 border border-slate-100">
-                    <div class="flex flex-col md:flex-row items-center gap-6">
-                        <div
-                            class="w-24 h-24 bg-white rounded-2xl shadow-md border border-slate-100 p-4 flex items-center justify-center">
-                            <img alt="Skyline Digital Logo" class="w-full h-auto object-contain"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTI2EfTqzs5duN0l5O9Yi-rLpZ1xcD8iD91FX9U3rTbjPuXefbTostRPeaANhSId5qA7zEENvlFHWW-RdKH2nQgQmeVwskGfvyvaiF5Hqm9r92NhU28_FKQB2VvXxeNnwbA6G0NhhuQMlKZ6Mo7NtluXQzUxB_yH_fhCOhSm85PeVKzdVtPbq_IO5q61dTBUqUR9m3skJZ8x5sb1pQhCNT5qOu_6m5sDrvRcByu_d_0CefVS8MwMNEztM6MhzTi9hn133xOyV5eA"
-                                style="clip-path: inset(100px 100px 100px 100px);" /> <!-- Mocking logo extraction -->
-                            <div class="text-emerald-600 font-bold text-2xl">S</div> <!-- Placeholder icon -->
+                    class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="company-logo-box">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                                alt="Skyline Logo" width="40">
                         </div>
-                        <div class="text-center md:text-left">
-                            <p class="text-sm font-medium text-slate-500 uppercase tracking-wider">Digital Experience
-                                Studio</p>
-                            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Skyline Digital</h1>
-                            <div
-                                class="flex flex-wrap justify-center md:justify-start gap-4 mt-2 text-sm text-slate-500 font-medium">
-                                <span class="flex items-center gap-1">📍 San Francisco, USA</span>
-                                <span class="flex items-center gap-1">👥 180+ team members</span>
-                                <span class="flex items-center gap-1">📅 Since 2014</span>
+                        <div>
+                            <span class="text-muted small text-uppercase fw-semibold d-block mb-1">Digital Experience
+                                Studio</span>
+                            <h1 class="h3 fw-bold mb-2">Skyline Digital</h1>
+                            <div class="d-flex flex-wrap gap-3 text-muted small">
+                                <span><i class="bi bi-geo-alt me-1"></i> San Francisco, USA</span>
+                                <span><i class="bi bi-people me-1"></i> 180+ team members</span>
+                                <span><i class="bi bi-calendar3 me-1"></i> Since 2014</span>
                             </div>
                         </div>
                     </div>
-                    <div class="flex gap-3">
-                        <button
-                            class="px-6 py-2.5 bg-indigo-50 text-indigo-700 font-semibold flex items-center gap-2 hover:bg-indigo-100 transition-all border border-indigo-100 rounded-full"><span
-                                class="material-symbols-outlined text-2xl">bookmark</span> Follow Company</button>
-                        <button
-                            class="px-6 py-2.5 bg-blue-600 text-white font-semibold flex items-center gap-2 hover:bg-blue-700 transition-all shadow-md rounded-full"><span
-                                class="material-symbols-outlined text-2xl">work</span> View Open Roles</button>
+                    <div class="d-flex gap-2 w-100 w-lg-auto">
+                        <button class="btn btn-soft-primary px-4 w-100"><i class="bi bi-bookmark-plus me-1"></i> Follow
+                            Company</button>
+                        <button class="btn btn-primary px-4 w-100"><i class="bi bi-briefcase me-1"></i> View Open
+                            Roles</button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- END: HeroSection -->
-        <!-- BEGIN: MainContent -->
-        <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-8"
-            data-purpose="main-content-layout">
-            <!-- Left Column: Company Details -->
-            <div class="lg:col-span-8 space-y-8">
-                <!-- Who We Are Card -->
-                <article class="bg-white p-8 rounded-2xl card-shadow border border-slate-100"
-                    data-purpose="about-section">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-4">Who We Are</h2>
-                    <div class="text-slate-600 leading-relaxed space-y-4">
-                        <p>Skyline Digital is a multidisciplinary studio building immersive product experiences for
+        </div>
+
+        <div class="container pb-5">
+            <div class="row g-4">
+
+                <div class="col-lg-8">
+                    <section class="ui-card">
+                        <h2 class="h4 mb-3">Who We Are</h2>
+                        <p class="text-muted-custom lh-lg mb-0">
+                            Skyline Digital is a multidisciplinary studio building immersive product experiences for
                             finance, ecommerce, and emerging tech brands. We combine research-led design with
-                            battle-tested engineering to launch products that scale across millions of users.</p>
-                        <p>Our teams operate with a maker-first culture: weekly design critiques, shared ownership of
+                            battle-tested engineering to launch products that scale across millions of users.<br><br>
+                            Our teams operate with a maker-first culture: weekly design critiques, shared ownership of
                             roadmaps, and space to iterate rapidly so we can keep pushing what digital experiences can
-                            be.</p>
-                    </div>
-                </article>
-                <!-- What We Value Card -->
-                <article class="bg-white p-8 rounded-2xl card-shadow border border-slate-100"
-                    data-purpose="values-section">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-6">What We Value</h2>
-                    <div class="flex flex-wrap gap-3">
-                        <span
-                            class="px-4 py-2 bg-blue-50 text-blue-700 text-xs font-bold rounded-full border border-blue-100 flex items-center gap-2">💡
-                            Product Thinking</span>
-                        <span
-                            class="px-4 py-2 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-full border border-indigo-100 flex items-center gap-2">🔗
-                            Transparent Collaboration</span>
-                        <span
-                            class="px-4 py-2 bg-violet-50 text-violet-700 text-xs font-bold rounded-full border border-violet-100 flex items-center gap-2">🔬
-                            Experiments Over Ego</span>
-                        <span
-                            class="px-4 py-2 bg-blue-50 text-blue-700 text-xs font-bold rounded-full border border-blue-100 flex items-center gap-2">🌐
-                            Global Impact</span>
-                        <span
-                            class="px-4 py-2 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-full border border-indigo-100 flex items-center gap-2">💙
-                            People-First Culture</span>
-                    </div>
-                </article>
-                <!-- Life at Skyline Grid -->
-                <article class="bg-white p-8 rounded-2xl card-shadow border border-slate-100"
-                    data-purpose="benefits-section">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-8">Life at Skyline</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Benefit 1 -->
-                        <div
-                            class="p-6 bg-slate-50 rounded-xl border border-slate-100 group hover:bg-white hover:border-emerald-200 transition-all">
-                            <div
-                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-4 text-blue-600 border border-slate-100">
-                                ✈️
-                            </div>
-                            <h3 class="font-bold text-slate-900 mb-2">Remote-Friendly</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed">Work where you're most productive with
-                                quarterly in-person retreats and studio hubs worldwide.</p>
+                            be.
+                        </p>
+                    </section>
+
+                    <section class="ui-card">
+                        <h2 class="h4 mb-4">What We Value</h2>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="ui-badge"><i class="bi bi-lightbulb"></i> Product Thinking</span>
+                            <span class="ui-badge"><i class="bi bi-chat-left-text"></i> Transparent Collaboration</span>
+                            <span class="ui-badge"><i class="bi bi-flask"></i> Experiments Over Ego</span>
+                            <span class="ui-badge"><i class="bi bi-globe-americas"></i> Global Impact</span>
+                            <span class="ui-badge"><i class="bi bi-heart"></i> People-First Culture</span>
                         </div>
-                        <!-- Benefit 2 -->
-                        <div
-                            class="p-6 bg-slate-50 rounded-xl border border-slate-100 group hover:bg-white hover:border-emerald-200 transition-all">
-                            <div
-                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-4 text-indigo-600 border border-slate-100">
-                                🎓
+                    </section>
+
+                    <section class="ui-card">
+                        <h2 class="h4 mb-4">Life at Skyline</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <i class="bi bi-airplane-engines fs-4 text-primary mb-2 d-block"></i>
+                                    <h3 class="h6 fw-bold">Remote-Friendly</h3>
+                                    <p class="text-muted small mb-0 mt-2">Work where you're most productive with
+                                        quarterly in-person retreats and studio hubs worldwide.</p>
+                                </div>
                             </div>
-                            <h3 class="font-bold text-slate-900 mb-2">Continuous Learning</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed">Annual stipend for conferences,
-                                certifications, and mentorship programs led by industry experts.</p>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <i class="bi bi-mortarboard fs-4 text-primary mb-2 d-block"></i>
+                                    <h3 class="h6 fw-bold">Continuous Learning</h3>
+                                    <p class="text-muted small mb-0 mt-2">Annual stipend for conferences,
+                                        certifications, and mentorship programs led by industry experts.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <i class="bi bi-heart-pulse fs-4 text-primary mb-2 d-block"></i>
+                                    <h3 class="h6 fw-bold">Health + Wellness</h3>
+                                    <p class="text-muted small mb-0 mt-2">Premium medical cover, wellness allowances,
+                                        and flexible time off to recharge and explore.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-box">
+                                    <i class="bi bi-graph-up-arrow fs-4 text-primary mb-2 d-block"></i>
+                                    <h3 class="h6 fw-bold">Growth Mindset</h3>
+                                    <p class="text-muted small mb-0 mt-2">Clear leveling frameworks, quarterly career
+                                        conversations, and opportunities to switch squads.</p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Benefit 3 -->
-                        <div
-                            class="p-6 bg-slate-50 rounded-xl border border-slate-100 group hover:bg-white hover:border-emerald-200 transition-all">
-                            <div
-                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-4 text-violet-600 border border-slate-100">
-                                🩺
-                            </div>
-                            <h3 class="font-bold text-slate-900 mb-2">Health + Wellness</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed">Premium medical cover, wellness
-                                allowances, and flexible time off to recharge and explore.</p>
+                    </section>
+
+                    <section class="ui-card">
+                        <h2 class="h4 mb-2">Inside Our Studios</h2>
+                        <p class="text-muted mb-4">Take a peek at some of our favourite moments across Skyline hubs and
+                            remote retreats.</p>
+                        <div class="row g-3">
+                            <div class="col-md-4"><img
+                                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=500"
+                                    class="gallery-img" alt="Studio 1"></div>
+                            <div class="col-md-4"><img
+                                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=500"
+                                    class="gallery-img" alt="Studio 2"></div>
+                            <div class="col-md-4"><img
+                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=500"
+                                    class="gallery-img" alt="Studio 3"></div>
                         </div>
-                        <!-- Benefit 4 -->
-                        <div
-                            class="p-6 bg-slate-50 rounded-xl border border-slate-100 group hover:bg-white hover:border-emerald-200 transition-all">
-                            <div
-                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-4 text-blue-600 border border-slate-100">
-                                📈
-                            </div>
-                            <h3 class="font-bold text-slate-900 mb-2">Growth Mindset</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed">Clear leveling frameworks, quarterly
-                                career conversations, and opportunities to switch squads.</p>
+                    </section>
+                </div>
+
+                <aside class="col-lg-4">
+                    <div class="ui-card">
+                        <h3 class="h5 mb-4">Company Snapshot</h3>
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-globe fs-5 text-muted mt-1"></i>
+                                <div><strong class="d-block text-dark small">Website</strong><a href="#"
+                                        class="text-primary small">skylinedigital.com</a></div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-building fs-5 text-muted mt-1"></i>
+                                <div><strong class="d-block text-dark small">Industry</strong><span
+                                        class="text-muted small">Product Design & Engineering</span></div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-diagram-3 fs-5 text-muted mt-1"></i>
+                                <div><strong class="d-block text-dark small">Departments</strong><span
+                                        class="text-muted small">Design, Engineering, Research</span></div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-geo-alt fs-5 text-muted mt-1"></i>
+                                <div><strong class="d-block text-dark small">Offices</strong><span
+                                        class="text-muted small">SF - Berlin - Singapore - Remote</span></div>
+                            </li>
+                            <li class="d-flex align-items-start gap-3">
+                                <i class="bi bi-graph-up fs-5 text-muted mt-1"></i>
+                                <div><strong class="d-block text-dark small">Growth</strong><span
+                                        class="text-muted small">45% YoY revenue</span></div>
+                            </li>
+                        </ul>
+                        <div class="mt-4 pt-3 border-top d-flex gap-3">
+                            <a href="#" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
+                            <a href="#" class="text-muted"><i class="bi bi-twitter-x fs-5"></i></a>
+                            <a href="#" class="text-muted"><i class="bi bi-youtube fs-5"></i></a>
                         </div>
                     </div>
-                </article>
-                <!-- Studio Gallery -->
-                <article class="bg-white p-8 rounded-2xl card-shadow border border-slate-100"
-                    data-purpose="gallery-section">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-2">Inside Our Studios</h2>
-                    <p class="text-sm text-slate-500 mb-8">Take a peek at some of our favourite moments across Skyline
-                        hubs and remote retreats.</p>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <img alt="Studio Life" class="rounded-xl object-cover h-40 w-full"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_9RP0ZQc52Xj4O9spewwH75iPzcK8Zu1D_STtgvFXN0oVNvTQxRrAWvQDcIlPUD_QAnLYVll3C0e9zD8mPSClg9wa9uNf6D0vFV7J1LYQCD91rLwRkg3USBOQavQA5X0uksoiSZXO9nEEEdGoGZDa_i-3Ke-fj3KGQygTXTGMosXqKYO0YT8-Pl97vCJBkIj7WJmiyr1d7N0DAcSFh5zvxZs6LSZNhk5PA3q14qjUh_WDaIcHl-nxe-7k7ZZFvp9D5J_5U5kQQw" />
-                        <img alt="Studio Life" class="rounded-xl object-cover h-40 w-full"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr2KCC35FoYgdaTCcwlPO-VPaWhdbyC2zjUtJO1_4zv6H5vMZERL5Fle-Z1sa_ptG7894VQmW70SVG3McBNqHCc_fxXfEJKGBqYkmSvBYm9HyY_B84gL1hOmoLa1uwPqJf7a-IMWfNImA8RO9Aswdu-7D-ClIU5NluV3xYcICrQkKJL-RIIk8rANfVbeB6WXT43pKAntQVBee2doaTW7Ay-gmJEorwHeI7QqGmjOwxnCSB9sdk0fJ9prpnmUeh7N_Kfbke9aq6jQ" />
-                        <img alt="Studio Life" class="rounded-xl object-cover h-40 w-full"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdF_OPTVSb_vhdOAgCl4h-8Zrc8N2WNGfgLgTPqfyo1QqcCRjL2zE95UTqi1jxrLx4TN3MCCZGvByPfIjL0j04pqTySQZE2DVG-Uhyt9mQlkghlBWnvL1lVqvnUYcHqQ9vbewxu6DOjeRzosLuSQXO82hhNquIPegy7-Gs9J_VEknPUxjDXuPnNQzWQ-olAcZVarACOcwIQ7qVsaQQEsz6LGwwi1PRalTfiYxO482j3VuujiJWlGYu9-rVbaqoZH6tWszy3Jv7Rg" />
-                        <img alt="Studio Life" class="rounded-xl object-cover h-40 w-full col-span-2 md:col-span-1"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2bspUnc6nToMgyDPn7BMCPywQVWDn3CrvG6wuw-gRRYhYWsBru_e0TpYyBNnTqtJPf0HxqZ5GOHmz_n33g4a3UsYsT7DbEEbEAsIpRZeuUH-Pqp59eEpSCDWC7fM2-9ipAPSnQO71MNOh8L02rx0vDx04DFML-C5miRr_APlc1nKBOrK-5cxCNOoRam52M7RqS-9wyTQDs-gw1Fuxn9QU5rgSXvvVlTqr3Mp2NoPIWuVku_-phUxSymv2lLmg44mKJTjcY9xXfg" />
+
+                    <div class="ui-card">
+                        <h3 class="h5 mb-4">Get In Touch</h3>
+                        <form>
+                            <div class="mb-3"><input type="text" class="form-control" placeholder="Full name"></div>
+                            <div class="mb-3"><input type="email" class="form-control" placeholder="Work email"></div>
+                            <div class="mb-4"><textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary w-100">Send Message</button>
+                        </form>
                     </div>
-                </article>
+
+                    <div class="ui-card">
+                        <h3 class="h5 mb-3">Studio Locations</h3>
+                        <div class="position-relative rounded-3 overflow-hidden border">
+                            <button class="btn btn-light btn-sm position-absolute top-0 start-0 m-2 shadow-sm z-2"
+                                style="font-size: 0.8rem;"><i class="bi bi-box-arrow-up-right me-1"></i> Open in
+                                Maps</button>
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=600"
+                                alt="Map" class="w-100" style="height: 200px; object-fit: cover;">
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <!-- Right Column: Sidebar -->
-            <aside class="lg:col-span-4 space-y-6">
-                <!-- Company Snapshot Card -->
-                <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100"
-                    data-purpose="snapshot-sidebar">
-                    <h3 class="text-lg font-bold text-slate-900 mb-6">Company Snapshot</h3>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <span class="text-slate-400 mt-1">🌐</span>
-                            <div>
-                                <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Website</p>
-                                <a class="text-sm font-semibold text-blue-600 hover:underline  no-underline" 
-                                    href="#">skylinedigital.com</a>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-slate-400 mt-1">💼</span>
-                            <div>
-                                <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Industry</p>
-                                <p class="text-sm font-semibold text-slate-700">Product Design &amp; Engineering</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-slate-400 mt-1">🏢</span>
-                            <div>
-                                <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Departments</p>
-                                <p class="text-sm font-semibold text-slate-700">Design, Engineering, Research</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-slate-400 mt-1">📍</span>
-                            <div>
-                                <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Offices</p>
-                                <p class="text-sm font-semibold text-slate-700">SF · Berlin · Singapore · Remote</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <span class="text-slate-400 mt-1">📊</span>
-                            <div>
-                                <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Growth</p>
-                                <p class="text-sm font-semibold text-slate-700">45% YoY revenue</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="mt-8 pt-6 border-t border-slate-100 flex gap-4 text-slate-400">
-                        <a class="hover:text-blue-600 no-underline" href="#">LinkedIn</a>
-                        <a class="hover:text-blue-600 no-underline" href="#">X</a>
-                        <a class="hover:text-blue-600 no-underline" href="#">YouTube</a>
+        </div>
+
+        <section class="open-roles-section">
+            <div class="container">
+                <div class="row mb-5 align-items-center">
+                    <div class="col-lg-8 mb-3 mb-lg-0">
+                        <h2 class="mb-2">Open Roles</h2>
+                        <p class="text-muted mb-0">We're hiring across design, engineering, and strategy. Join our fully
+                            distributed team.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <button class="btn btn-outline-primary bg-white shadow-sm"><i
+                                class="bi bi-envelope-fill me-2"></i> Refer a Friend</button>
                     </div>
                 </div>
-                <!-- Get In Touch Form -->
-                <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100"
-                    data-purpose="contact-sidebar">
-                    <h3 class="text-lg font-bold text-slate-900 mb-4">Get In Touch</h3>
-                    <form class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 mb-1">Full name</label>
-                            <input
-                                class="w-full text-sm border-slate-200 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
-                                placeholder="Jordan Blake" type="text" />
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 mb-1">Work email</label>
-                            <input
-                                class="w-full text-sm border-slate-200 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
-                                placeholder="you@company.com" type="email" />
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-500 mb-1">Message</label>
-                            <textarea
-                                class="w-full text-sm border-slate-200 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
-                                placeholder="Tell us how we can collaborate..." rows="3"></textarea>
-                        </div>
-                        <button
-                            class="w-full py-2.5 bg-white border border-blue-200 text-blue-600 font-bold hover:bg-blue-50 transition-colors rounded-full">Send
-                            Message</button>
-                    </form>
-                </div>
-                <!-- Locations Widget -->
-                <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100"
-                    data-purpose="locations-sidebar">
-                    <h3 class="text-lg font-bold text-slate-900 mb-4">Studio Locations</h3>
-                    <div class="w-full h-48 bg-slate-100 rounded-xl overflow-hidden grayscale">
-                        <img alt="Map" class="w-full h-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmVgfTRkbQVvJLzwtFqhUzD-N0CfHbeRe7yVFZUBH2MH1eqFEfFlncGWTh6q58Fsl6HAp0pOp9I9bFgY_fWafvFmarN1SPWHvMe60EuUx18MRapKu33WLywZULDDLf3TZPkR-Ubk3eiF-T9PweobOwpuzgn0jIN-b8hPwTj1NPvYgY18suLULrpoewNZC1hA43jy1lmgc23SwDbFGivrqn8Srj5uBlrZngd8CVE8a0ke3b6eb8fo6JulvC9Q5ZaIrBK6FveKgsgw" />
-                    </div>
-                </div>
-            </aside>
-        </section>
-        <!-- END: MainContent -->
-        <!-- BEGIN: OpenRoles -->
-        <section class="bg-slate-50 py-20 border-t border-slate-200" data-purpose="job-listings">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
-                    <div>
-                        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Open Roles</h2>
-                        <p class="text-slate-500 font-medium">We're hiring across design, engineering, and strategy.
-                            Join our fully distributed team.</p>
-                    </div>
-                    <button
-                        class="flex items-center gap-2 px-5 py-2.5 bg-white border border-blue-200 text-blue-600 font-bold hover:bg-blue-50 transition-all text-sm shadow-sm rounded-full">
-                        <span>📧</span> Refer a Friend
-                    </button>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Job 1 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 relative group cursor-pointer hover:border-emerald-400 transition-all">
-                        <div class="flex justify-between items-start mb-6">
-                            <span
-                                class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[10px] font-bold rounded-md border border-emerald-100 uppercase tracking-wider">Full
-                                Time</span>
-                        </div>
-                        <h4
-                            class="text-xl font-bold text-slate-900 mb-4 group-hover:text-emerald-700 transition-colors">
-                            Lead Product Designer</h4>
-                        <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">Salary: $120k - $150k
-                        </p>
-                        <p class="text-sm font-semibold text-blue-600 mb-8 flex items-center gap-1">📍 Remote · North
-                            America</p>
-                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center p-1 border border-emerald-100">
-                                    <span class="text-emerald-600 text-xs font-bold">S</span>
-                                </div>
-                                <div>
-                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Posted</p>
-                                    <p class="text-xs font-bold text-slate-700">3 days ago</p>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card job-card h-100 p-4 bg-white">
+                            <div><span class="badge-soft-success">Full Time</span></div>
+                            <h4 class="h5 fw-bold mt-3 mb-3">Lead Product Designer</h4>
+                            <p class="small fw-medium mb-2">Salary: $120k - $150k</p>
+                            <div class="text-primary small fw-medium d-flex align-items-center mb-3">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Remote • North America
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center">
+                                <div class="job-logo-box me-3 text-warning"><i class="bi bi-triangle"></i></div>
+                                <div class="lh-sm">
+                                    <p class="text-muted mb-0" style="font-size: 0.75rem;">Posted</p>
+                                    <p class="mb-0 small fw-bold">3 days ago</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Job 2 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 relative group cursor-pointer hover:border-emerald-400 transition-all">
-                        <div class="flex justify-between items-start mb-6">
-                            <span
-                                class="px-2.5 py-1 bg-orange-50 text-orange-700 text-[10px] font-bold rounded-md border border-orange-100 uppercase tracking-wider">Contract</span>
-                        </div>
-                        <h4
-                            class="text-xl font-bold text-slate-900 mb-4 group-hover:text-emerald-700 transition-colors">
-                            Senior Frontend Engineer</h4>
-                        <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">Salary: €85k - €110k
-                        </p>
-                        <p class="text-sm font-semibold text-blue-600 mb-8 flex items-center gap-1">📍 Berlin, Germany
-                        </p>
-                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-8 h-8 rounded-lg bg-orange-50 flex items-center justify-center p-1 border border-orange-100">
-                                    <span class="text-orange-600 text-xs font-bold">S</span>
-                                </div>
-                                <div>
-                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Posted</p>
-                                    <p class="text-xs font-bold text-slate-700">1 week ago</p>
+
+                    <div class="col-md-4">
+                        <div class="card job-card h-100 p-4 bg-white">
+                            <div><span class="badge-soft-danger">Contract</span></div>
+                            <h4 class="h5 fw-bold mt-3 mb-3">Senior Frontend Engineer</h4>
+                            <p class="small fw-medium mb-2">Salary: €85k - €110k</p>
+                            <div class="text-primary small fw-medium d-flex align-items-center mb-3">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Berlin, Germany
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center">
+                                <div class="job-logo-box me-3 text-secondary"><i class="bi bi-diagram-3"></i></div>
+                                <div class="lh-sm">
+                                    <p class="text-muted mb-0" style="font-size: 0.75rem;">Posted</p>
+                                    <p class="mb-0 small fw-bold">1 week ago</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Job 3 -->
-                    <div
-                        class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 relative group cursor-pointer hover:border-emerald-400 transition-all">
-                        <div
-                            class="absolute -top-3 -right-3 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs border-4 border-slate-50">
-                            ⚡</div>
-                        <div class="flex justify-between items-start mb-6">
-                            <span
-                                class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-[10px] font-bold rounded-md border border-emerald-100 uppercase tracking-wider">Full
-                                Time</span>
-                        </div>
-                        <h4
-                            class="text-xl font-bold text-slate-900 mb-4 group-hover:text-emerald-700 transition-colors">
-                            Platform Delivery Manager</h4>
-                        <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">Salary: $95k - $135k
-                        </p>
-                        <p class="text-sm font-semibold text-blue-600 mb-8 flex items-center gap-1">📍 Singapore</p>
-                        <div class="flex items-center justify-between pt-6 border-t border-slate-50">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center p-1 border border-emerald-100">
-                                    <span class="text-emerald-600 text-xs font-bold">S</span>
-                                </div>
-                                <div>
-                                    <p class="text-[10px] font-bold text-slate-400 uppercase">Posted</p>
-                                    <p class="text-xs font-bold text-slate-700">2 weeks ago</p>
+
+                    <div class="col-md-4">
+                        <div class="card job-card h-100 p-4 bg-white">
+                            <div class="urgent-icon shadow-sm"><i class="bi bi-lightning-charge-fill"></i></div>
+                            <div><span class="badge-soft-success">Full Time</span></div>
+                            <h4 class="h5 fw-bold mt-3 mb-3">Platform Delivery Manager</h4>
+                            <p class="small fw-medium mb-2">Salary: $95k - $135k</p>
+                            <div class="text-primary small fw-medium d-flex align-items-center mb-3">
+                                <i class="bi bi-geo-alt-fill me-2"></i> Singapore
+                            </div>
+                            <hr class="text-muted opacity-25 my-3">
+                            <div class="d-flex align-items-center">
+                                <div class="job-logo-box me-3 text-success"><i class="bi bi-camera-video"></i></div>
+                                <div class="lh-sm">
+                                    <p class="text-muted mb-0" style="font-size: 0.75rem;">Posted</p>
+                                    <p class="mb-0 small fw-bold">2 weeks ago</p>
                                 </div>
                             </div>
                         </div>
@@ -402,9 +540,11 @@
                 </div>
             </div>
         </section>
-        <!-- END: OpenRoles -->
     </main>
-    <!-- BEGIN: Footer -->
+
     <?php include "landing/footer.php"?>
-    <!-- END: Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>

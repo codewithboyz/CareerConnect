@@ -50,7 +50,7 @@
             </a>
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
               <li><a href="employer.php">Employer List</a></li>
-              <li><a href="#">Employer Details</a></li>
+              <li><a href="employee_single.php">Employer Details</a></li>
             </ul>
           </li>
 
@@ -63,6 +63,7 @@
               <li><a href="candidate.php">Candidate List</a></li>
               <li><a href="#">Candidate Profile</a></li>
               <li><a href="Candidate-Dashboard.php">Candidate Dashboard</a></li>
+              <li><a href="candidate_single.php">Candidate Details</a></li>
             </ul>
           </li>
 
