@@ -1,0 +1,126 @@
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+/* Sidebar Card */
+.sidebar-card {
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  overflow-y: auto;
+}
+
+/* Open to work box */
+.open-work {
+  background: #eaf7ee;
+  border: 1px solid #cdebd7;
+}
+
+/* Sidebar menu */
+.sidebar-menu li {
+  margin-bottom: 5px;
+}
+
+.sidebar-menu li a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* Hover */
+.sidebar-menu li a:hover {
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+/* Active */
+.sidebar-menu li.active a {
+  background: #e7efff;
+  color: #2563eb;
+  font-weight: 500;
+  border-left: 5px solid #2563eb;
+}
+
+/* Icons */
+.sidebar-menu i {
+  width: 18px;
+}
+
+/* Toggle switch color */
+.form-check-input:checked {
+  background-color: #22c55e;
+  border-color: #22c55e;
+}
+
+/* .offcanvas {
+  max-width: 270px !important;
+} */
+
+.offcanvas .sidebar-menu a {
+  font-size: 15px;
+}
+
+/* =========================================
+   Smooth Gradient Toggle Switch
+   ========================================= */
+
+.form-check-input.prf-switch {
+  width: 48px !important;
+  height: 25px !important;
+  border-radius: 25px !important;
+  background-color: #e5e7eb !important;
+  background-image: none !important;
+  border: none !important;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.form-check-input.prf-switch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #4f46e5, #7c3aed);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form-check-input.prf-switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.form-check-input.prf-switch:checked::before {
+  opacity: 1;
+}
+
+.form-check-input.prf-switch:checked::after {
+  transform: translateX(23px);
+}
+
+@media (max-width: 991px) {
+  .sidebar-card {
+    border: none;
+    box-shadow: none;
+  }
+}

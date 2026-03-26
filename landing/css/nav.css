@@ -1,9 +1,8 @@
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0px;
+  overflow-x: hidden;
 }
-
-
 
 /* Logo */
 .logo-main {
