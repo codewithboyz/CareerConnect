@@ -96,7 +96,10 @@ body {
    ========================================= */
 @media (max-width: 991px) {
   .offcanvas {
-    max-width: 320px;
+    max-width: 300px !important;
+  }
+  .offcanvas-backdrop {
+    width: 50%;
   }
 
   .offcanvas-body {
@@ -105,7 +108,7 @@ body {
 
   .navbar-nav {
     width: 100%;
-    text-align: left; /* Text remains on left */
+    text-align: left;
   }
 
   /* List items get bottom border as separator */

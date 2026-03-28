@@ -68,6 +68,7 @@
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
               <li><a href="aboutus.php">About</a></li>
               <li><a href="#">FAQ</a></li>
+              <li><a href="page-404.php">404 Page</a></li>
             </ul>
           </li>
         </ul>
@@ -118,3 +119,4 @@
     }
   });
 </script>
+<script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
