@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="landing/css/nav.css">
 <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
 
-<nav class="navbar navbar-expand-lg navbar-light custom-navbar py-3 sticky-top" style=" background: rgba(255, 255, 255, 0.6); ">
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar sticky-top" style=" background: rgba(255, 255, 255, 0.6); ">
   <div class="container">
 
     <a class="navbar-brand d-flex align-items-center" href="#">
@@ -13,9 +13,31 @@
       </div>
     </a>
 
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="d-flex align-items-center gap-3 order-lg-last">
+      
+      <ul class="navbar-nav profile-wrapper flex-row mb-0">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+            <img src="Asset/Image/testimonials-4.jpg" class="profile-img shadow-sm" alt="Profile" />
+          </a>
+          <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg dropdown-menu-end mt-1" style="position: absolute !important; width: 200px;">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="editprofile.php">View Profile</a></li>
+            <li><a href="build_resume.php">Build Resume</a></li>
+            <li><a href="download_cv.php">Download CV</a></li>
+            <li><a href="#">Manage Resume</a></li>
+            <li><a href="#">My Messages</a></li>
+            <li><a href="my_followings.php">My Followings</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
 
@@ -23,7 +45,7 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
 
-      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
+      <div class="offcanvas-body d-flex flex-column flex-lg-row align-items-lg-center">
 
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
@@ -53,14 +75,6 @@
             </ul>
           </li>
 
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
-            <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
-              <li><a href="#">Blog Grid</a></li>
-              <li><a href="#">Blog Details</a></li>
-            </ul>
-          </li> -->
-
           <li class="nav-item"><a class="nav-link" href="Contactus.php">Contact Us</a></li>
 
           <li class="nav-item dropdown">
@@ -75,27 +89,7 @@
 
         <div class="nav-buttons d-flex align-items-center">
           <a href="login.php" class="btn btn-outline-primary rounded-pill sign-btn">Sign in</a>
-          <a href="#" class="btn btn-success rounded-pill register-btn ms-lg-2">Register</a>
-
-          <ul class="navbar-nav profile-wrapper ms-lg-3">
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                <img src="Asset/Image/testimonials-4.jpg" class="profile-img" alt="Profile" />
-              </a>
-              <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg dropdown-menu-end">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="editprofile.php">View Profile</a></li>
-                <li><a href="build_resume.php">Build Resume</a></li>
-                <li><a href="download_cv.php">Download CV</a></li>
-                <li><a href="#">Manage Resume</a></li>
-                <li><a href="#">My Messages</a></li>
-                <li><a href="#">My Followings</a></li>
-                <li><a href="#">Packages</a></li>
-                <li><a href="#">Payment History</a></li>
-                <li><a href="#">Logout</a></li>
-              </ul>
-            </li>
-          </ul>
+          <a href="#" class="btn btn-success rounded-pill register-btn ms-lg-2 mt-3 mt-lg-0">Register</a>
         </div>
 
       </div>
@@ -107,16 +101,24 @@
   document.addEventListener("DOMContentLoaded", function() {
     if (window.innerWidth >= 992) {
       document.querySelectorAll('.dropdown').forEach(drop => {
+        let timeoutId; 
+
         drop.addEventListener('mouseenter', function() {
+          clearTimeout(timeoutId); 
           let menu = this.querySelector('.dropdown-menu');
           if (menu) menu.classList.add('show');
         });
+
         drop.addEventListener('mouseleave', function() {
           let menu = this.querySelector('.dropdown-menu');
-          if (menu) menu.classList.remove('show');
+          
+          timeoutId = setTimeout(() => {
+            if (menu) menu.classList.remove('show');
+          }, 50); 
         });
+        
       });
     }
   });
 </script>
-<script src="Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../Asset/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
