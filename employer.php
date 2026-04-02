@@ -14,6 +14,7 @@
 <body>
   <div>
     <?php include "landing/nav.php"; ?>
+    <?php include "employer_pages/employer_banner.php"; ?>
     <?php include "employer_pages/employer_list.php"; ?>
     <?php include "landing/footer.php"; ?>
   </div>

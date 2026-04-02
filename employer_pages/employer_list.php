@@ -3,7 +3,7 @@
     <div class="row g-4">
 
       <!-- LEFT SIDEBAR -->
-      <div class="col-lg-3 ">
+      <div class="col-lg-3 d-none d-lg-block">
         <div class="card p-3 mb-4 rounded-3 border-1 border-primary-subtle shadow-sm">
           <div class="card-body p-2">
 

@@ -31,11 +31,7 @@
 /* ============================= */
 
 @media (max-width: 991px) {
-  /* hide sidebar */
-  .col-lg-3 {
-    display: none;
-  }
-
+ 
   /* card padding adjust */
   .card {
     padding: 18px !important;

@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="Asset/bootstrap-5.3.7-dist/css/bootstrap.min.css">
 <style>
   /* Sidebar Card */
@@ -118,15 +117,11 @@ $dismiss_attr = isset($is_mobile) && $is_mobile ? 'data-bs-dismiss="offcanvas"' 
     <li class="<?= ($current_page == 'messages.php') ? 'active' : ''; ?>">
       <a href="messages.php" <?= $dismiss_attr; ?>><i class="fa fa-envelope me-2"></i>My Messages</a>
     </li>
-    <li class="<?= ($current_page == 'followings.php') ? 'active' : ''; ?>">
-      <a href="followings.php" <?= $dismiss_attr; ?>><i class="fa fa-users me-2"></i>My Followings</a>
+    <li class="<?= ($current_page == 'my_followings.php') ? 'active' : ''; ?>">
+      <a href="my_followings.php" <?= $dismiss_attr; ?>><i class="fa fa-users me-2"></i>My Followings</a>
     </li>
-    <li class="<?= ($current_page == 'packages.php') ? 'active' : ''; ?>">
-      <a href="packages.php" <?= $dismiss_attr; ?>><i class="fa fa-box me-2"></i>Packages</a>
-    </li>
-    <li class="<?= ($current_page == 'payment_history.php') ? 'active' : ''; ?>">
-      <a href="payment_history.php" <?= $dismiss_attr; ?>><i class="fa fa-credit-card me-2"></i>Payment History</a>
-    </li>
+
+
     <li>
       <a href="logout.php" <?= $dismiss_attr; ?>><i class="fa fa-right-from-bracket me-2"></i>Logout</a>
     </li>
