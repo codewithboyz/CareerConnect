@@ -311,8 +311,8 @@
           </div>
         </div>
       </div>
-      <div class="text-center pt-5">
-        <a href="#" type="button" class="view-btn btn btn-primary rounded-pill py-2 px-4">View All Latest
+      <div class="text-center pt-">
+        <a href="#" type="button" class="view-btn btn btn-primary rounded-pill py-3 px-5">View All Latest
           Jobs</a>
       </div>
     </div>

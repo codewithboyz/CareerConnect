@@ -14,7 +14,7 @@
     </a>
 
     <div class="d-flex align-items-center gap-3 order-lg-last">
-      
+
       <ul class="navbar-nav profile-wrapper flex-row mb-0">
         <li class="nav-item dropdown">
           <a href="#" class="nav-link p-0" data-bs-toggle="dropdown" data-bs-auto-close="outside">
@@ -62,7 +62,9 @@
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Employer</a>
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
               <li><a href="employer.php">Employer List</a></li>
-              <li><a href="#">Employer Details</a></li>
+              <li><a href="employee_single.php">Employer Single</a></li>
+              <li><a href="employer-dashboard.php">Employer Dashboard</a></li>
+              <li><a href="#">Post Job</a></li>
             </ul>
           </li>
 
@@ -71,7 +73,10 @@
             <ul class="dropdown-menu custom-dropdown border-0 shadow-sm-lg">
               <li><a href="candidate.php">Candidate List</a></li>
               <li><a href="#">Candidate Profile</a></li>
+              <li><a href="editprofile.php">Edit Profile</a></li>
               <li><a href="Candidate-Dashboard.php">Candidate Dashboard</a></li>
+              <li><a href="public_profile.php">View Public Profile</a></li>
+              <li><a href="my_followings.php">My Following</a></li>
             </ul>
           </li>
 
@@ -101,22 +106,22 @@
   document.addEventListener("DOMContentLoaded", function() {
     if (window.innerWidth >= 992) {
       document.querySelectorAll('.dropdown').forEach(drop => {
-        let timeoutId; 
+        let timeoutId;
 
         drop.addEventListener('mouseenter', function() {
-          clearTimeout(timeoutId); 
+          clearTimeout(timeoutId);
           let menu = this.querySelector('.dropdown-menu');
           if (menu) menu.classList.add('show');
         });
 
         drop.addEventListener('mouseleave', function() {
           let menu = this.querySelector('.dropdown-menu');
-          
+
           timeoutId = setTimeout(() => {
             if (menu) menu.classList.remove('show');
-          }, 50); 
+          }, 50);
         });
-        
+
       });
     }
   });

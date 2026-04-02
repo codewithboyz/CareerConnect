@@ -203,6 +203,6 @@
         </div>
     </div>
     <div class="text-center">
-        <button class="btn btn-primary view-all-btn">View All Featured Company</button>
+        <button class="btn btn-primary view-all-btn py-3">View All Featured Company</button>
     </div>
 </div>

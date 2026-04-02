@@ -11,7 +11,7 @@
 
         <div class="slider-container">
 
-            <button class="arrow left" id="leftBtn">&#10094;</button>
+            <button class="arrow left " id="leftBtn">&#10094;</button>
 
             <div class="slider" id="slider">
 

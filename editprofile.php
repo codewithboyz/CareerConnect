@@ -15,11 +15,13 @@
 
 <body>
     <?php include "landing/nav.php"; ?>
-    <div class="container-fluid">
+    <div class="container">
 
-        <div class="row">
+        <div class="row ">
             <!-- SIDEBAR -->
-            <?php include "profile/sidebar.php"; ?>
+            <aside class="col-lg-3 d-none d-lg-block">
+                <?php include('sidebar/sidebar.php'); ?>
+            </aside>
             <!-- MAIN CONTENT -->
             <div class="col-lg-9 p-4">
 

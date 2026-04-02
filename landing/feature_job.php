@@ -186,7 +186,7 @@
 
         </div>
         <div class="text-center pt-4">
-            <a href="#" type="button" class="view-btn btn btn-primary rounded-pill py-2 px-5">View All Featured
+            <a href="#" type="button" class="view-btn btn btn-primary rounded-pill py-3 px-5">View All Featured
                 Jobs</a>
         </div>
     </div>
