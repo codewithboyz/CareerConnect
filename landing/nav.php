@@ -64,7 +64,7 @@
               <li><a href="employer.php">Employer List</a></li>
               <li><a href="employee_single.php">Employer Single</a></li>
               <li><a href="employer-dashboard.php">Employer Dashboard</a></li>
-              <li><a href="#">Post Job</a></li>
+              <li><a href="job_post.php">Post Job</a></li>
             </ul>
           </li>
 
