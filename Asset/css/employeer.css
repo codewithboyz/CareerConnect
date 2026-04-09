@@ -1,0 +1,128 @@
+.hero-bg {
+  background: linear-gradient(90deg, #eef4fc 0%, #edf8f7 100%)!important;
+  padding: 40px 0;
+}
+
+.hero-title {
+  color: #0f172a!important;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+.hero-subtitle {
+  color: #475569!important;
+  max-width: 650px;
+  font-size: 1.15rem;
+}
+.custom-badge {
+  background-color: #dbeafe!important;
+  color: #3b82f6!important;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.search-input-group {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  height: 56px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-primary-border {
+  border-color: #a5c8ff!important; 
+}
+
+.search-input-group:focus-within {
+  border-color: #3b82f6!important;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15)!important;
+}
+
+.search-input-group .form-control,
+.search-input-group .form-select {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  color: #475569!important;
+}
+
+.search-input-group .input-group-text {
+  background: transparent;
+  border: none;
+  color: #3b82f6!important; 
+}
+
+.btn-search {
+  height: 56px;
+  border-radius: 12px;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.custom-input-group {
+    border: 1px solid #e4e7ec;
+    background-color: #f8fafc;
+    border-radius: 10px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-input-group:focus-within {
+    border-color: #86b7fe!important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25)!important;
+    background-color: #ffffff;
+}
+
+.custom-input-group .input-group-text {
+    background-color: transparent;
+    border: none;
+    padding-right: 0;
+}
+
+.custom-input-group .form-control {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-input-group .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.custom-input-group .form-control::placeholder {
+    color: #8a94a6;
+}
+
+.jobcards_hover {
+    transition: 0.3s;
+}
+
+.jobcards_hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1)!important;
+}
+
+.bookmrks:hover {
+    background: rgba(23, 96, 255, 0.73) !important;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .jobcards_hover .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+
+    .jobcards_hover .border-start {
+        border-left: none !important;
+        padding-left: 0 !important;
+        margin-top: 15px;
+        align-items: flex-start !important;
+    }
+
+    .jobcards_hover .text-end {
+        text-align: left !important;
+    }
+
+    .btn-groups a {
+        width: 100%;
+    }
+}

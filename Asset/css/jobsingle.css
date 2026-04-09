@@ -1,0 +1,113 @@
+:root {
+            --brand-blue: #0d6efd;
+            --bg-body: #f8f9fa; 
+            --text-muted: #6c757d;
+            --footer-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body)!important;
+            color: #333;
+        }
+
+        /* Top Background Gradient */
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 338px;
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 100%);
+            z-index: -1;
+        }
+
+        /* Card Customizations */
+        .card-custom {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            background: #fff;
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        /* Nav & Links */
+        .nav-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #4b5563;
+        }
+        .nav-link:hover { color: var(--brand-blue)!important; }
+        .dropdown-toggle::after { vertical-align: middle; }
+
+        /* Badges */
+        .badge-soft-primary {
+            background-color: #e0f2fe!important;
+            color: #0369a1!important;
+        }
+        .badge-soft-success {
+            background-color: #dcfce7!important;
+            color: #15803d!important;
+        }
+        .badge-soft-danger {
+            background-color: #fee2e2!important;
+            color: #b91c1c!important;
+        }
+
+        /* Sidebar Snapshot List */
+        .snapshot-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f3f4f6;
+            font-size: 0.85rem;
+        }
+        .snapshot-list li:last-child { border-bottom: none; }
+        .snapshot-list .label { color: var(--text-muted); display: flex; align-items: center; gap: 8px;}
+        .snapshot-list .value { font-weight: 600; text-align: right;}
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: #94a3b8!important;
+            font-size: 0.85rem;
+        }
+        footer h6 {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        footer a {
+            color: #94a3b8!important;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        footer a:hover { color: #fff!important; }
+        .footer-social-icons a {
+            display: inline-flex;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 200px;
+            background: url('https://via.placeholder.com/400x200.png?text=Map+View') center/cover;
+            border-radius: 0.5rem;
+        }

@@ -1,0 +1,265 @@
+ /* --- Design Tokens --- */
+ :root {
+     --color-primary: #0066ff;
+     --color-primary-soft: #e5f0ff;
+     --color-success: #20c997;
+     --color-bg-main: #f4f7fa;
+     --color-bg-section: #f8fafd;
+     --color-text-main: #1a1f36;
+     --color-text-muted: #6c757d;
+     --color-border: #e9ecef;
+     --color-footer: #1c2331;
+
+     --radius-md: 12px;
+     --radius-lg: 20px;
+     --radius-pill: 50px;
+     --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.03);
+     --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.08);
+ }
+
+ /* --- Base Styles --- */
+ body {
+     font-family: 'Inter', sans-serif;
+     background-color: var(--color-bg-main) !important;
+     color: var(--color-text-main) !important;
+     -webkit-font-smoothing: antialiased;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-weight: 600;
+     letter-spacing: -0.01em;
+ }
+
+ a {
+     text-decoration: none;
+     transition: all 0.2s ease;
+ }
+
+ .text-muted-custom {
+     color: var(--color-text-muted) !important;
+     font-size: 0.95rem;
+ }
+
+ /* --- Navigation --- */
+ .navbar {
+     background-color: #fff !important;
+     border-bottom: 1px solid var(--color-border) !important;
+ }
+
+ .nav-link {
+     font-weight: 500;
+     font-size: 0.95rem;
+     color: #333 !important;
+ }
+
+ .nav-link:hover {
+     color: var(--color-primary) !important;
+ }
+
+ /* --- Buttons --- */
+ .btn {
+     border-radius: var(--radius-pill) !important;
+     font-weight: 500;
+     padding: 0.5rem 1.25rem;
+     transition: all 0.2s;
+ }
+
+ .btn-primary {
+     background-color: var(--color-primary) !important;
+     border-color: var(--color-primary) !important;
+ }
+
+ .btn-outline-primary {
+     color: var(--color-primary) !important;
+     border-color: var(--color-primary) !important;
+ }
+
+ .btn-outline-primary:hover {
+     background-color: var(--color-primary) !important;
+     color: #fff;
+ }
+
+ .btn-success {
+     background-color: var(--color-success) !important;
+     border: none;
+     color: white;
+ }
+
+ .btn-soft-primary {
+     background-color: var(--color-primary-soft) !important;
+     color: var(--color-primary) !important;
+     border: none;
+ }
+
+ .btn-soft-primary:hover {
+     background-color: #d1e3ff !important;
+ }
+
+ /* --- Cards --- */
+ .ui-card {
+     background: #fff;
+     border-radius: var(--radius-lg) !important;
+     border: none;
+     box-shadow: var(--shadow-soft) !important;
+     padding: 2rem;
+     margin-bottom: 1.5rem;
+ }
+
+ /* --- Hero & Overlap Header --- */
+ .hero-banner {
+     height: 300px;
+     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat !important;
+ }
+
+ .header-overlap {
+     margin-top: -80px;
+     position: relative;
+     z-index: 10;
+ }
+
+ .company-logo-box {
+     width: 80px;
+     height: 80px;
+     background: #fff;
+     border-radius: var(--radius-md) !important;
+     box-shadow: var(--shadow-soft) !important;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ /* --- Main Content Specifics --- */
+ .ui-badge {
+     background-color: var(--color-primary-soft) !important;
+     color: var(--color-primary) !important;
+     font-weight: 500;
+     padding: 0.5rem 1rem;
+     border-radius: var(--radius-pill) !important;
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     font-size: 0.875rem;
+ }
+
+ .feature-box {
+     background-color: var(--color-bg-section) !important;
+     border-radius: var(--radius-md) !important;
+     padding: 1.5rem;
+     height: 100%;
+     transition: transform 0.2s ease;
+ }
+
+ .feature-box:hover {
+     transform: translateY(-3px);
+     box-shadow: var(--shadow-soft) !important;
+ }
+
+ .gallery-img {
+     width: 100%;
+     height: 160px;
+     object-fit: cover;
+     border-radius: var(--radius-md) !important;
+ }
+
+ /* --- Open Roles Section --- */
+ .open-roles-section {
+     background-color: var(--color-bg-section) !important;
+     padding: 5rem 0;
+     border-top: 1px solid var(--color-border) !important;
+ }
+
+ .job-card {
+     border-radius: var(--radius-lg) !important;
+     border: none;
+     box-shadow: var(--shadow-soft) !important;
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+     position: relative;
+ }
+
+ .job-card:hover {
+     transform: translateY(-5px);
+     box-shadow: var(--shadow-hover) !important;
+ }
+
+ .badge-soft-success {
+     background-color: #dcfce7 !important;
+     color: #166534;
+     font-weight: 500;
+     padding: 0.4rem 0.8rem;
+     border-radius: var(--radius-pill) !important;
+     font-size: 0.8rem;
+ }
+
+ .badge-soft-danger {
+     background-color: #fee2e2 !important;
+     color: #b91c1c !important;
+     font-weight: 500;
+     padding: 0.4rem 0.8rem;
+     border-radius: var(--radius-pill) !important;
+     font-size: 0.8rem;
+ }
+
+ .urgent-icon {
+     position: absolute;
+     top: 24px;
+     right: 24px;
+     background-color: #ef4444 !important;
+     color: white;
+     width: 28px;
+     height: 28px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1rem;
+ }
+
+ .job-logo-box {
+     width: 40px;
+     height: 40px;
+     background-color: var(--color-bg-section) !important;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 1px solid var(--color-border) !important;
+     font-size: 1.2rem;
+ }
+
+ /* --- Footer --- */
+ footer {
+     background-color: var(--color-footer) !important;
+     color: #fff;
+     padding-top: 4rem;
+ }
+
+ .footer-heading {
+     font-size: 1.05rem;
+     font-weight: 600;
+     margin-bottom: 1.5rem;
+ }
+
+ .footer-link {
+     color: #a0aec0 !important;
+     text-decoration: none;
+     font-size: 0.9rem;
+     margin-bottom: 0.75rem;
+     display: block;
+ }
+
+ .footer-link:hover {
+     color: #fff;
+ }
+
+ .footer-bottom {
+     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+     padding: 1.5rem 0;
+     margin-top: 2rem;
+     font-size: 0.85rem;
+     color: #a0aec0 !important;
+ }

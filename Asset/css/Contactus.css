@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+element.style {
+    overflow: hidden;
+    padding-right: 320px;
+}
+
+.contact-banner-upper {
+    background: linear-gradient(135deg,
+            rgba(59, 130, 246, 0.16) 0%,
+            rgba(16, 185, 129, 0.14) 100%);
+    padding: 5% 0 5% 0;
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(37, 99, 235, 0.16);
+    border-radius: 999px;
+    padding: 8px 18px;
+    color: #1d4ed8;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.contact-banner {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.contact-banner-paragraph {
+    color: #475569;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+/* contact-deatails */
+
+.contact-message {
+    padding: 6%;
+    width: 100%;
+    display: flex;
+    background-color: rgb(241, 242, 244);
+    flex-wrap: wrap;
+}
+
+.contact-deatails {
+    width: 38%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(248, 251, 253);
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.1);
+}
+
+.contact-deatails h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.contact-deatails p {
+    color: #475569;
+    margin-bottom: 22px;
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+div .location {
+    background-color: #cedafb;
+    color: #1d4ed8;
+    height: 3rem;
+    width: 3.2rem;
+    border-radius: 13px;
+    padding-top: 10px;
+}
+
+.contact-sub-titel {
+    width: 100%;
+}
+
+.contact-sub-titel h4 {
+    margin: 0 0 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0f172a;
+    padding-left: 5%;
+}
+
+.contact-sub-titel p {
+    font-size: 17px;
+    padding-left: 5%;
+}
+
+.message {
+    width: 60%;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(248, 251, 253);
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.1);
+}
+
+.message-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.message p {
+    color: #475569;
+    font-size: 1.2rem;
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
+
+.message div p {
+    margin-bottom: 0;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.name-email-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-email-section div {
+    width: 50%;
+}
+
+.input-filed {
+    border-radius: 13px;
+    height: 6.5vh;
+    width: 95%;
+    padding-left: 5px;
+    border: 1px solid gray;
+    background-color: rgba(237, 236, 236, 0.2);
+}
+
+.input-filed:hover {
+    border: 2px solid rgb(40, 84, 231);
+}
+
+.select-filed {
+    border-radius: 13px;
+    height: 6.5vh;
+    width: 97%;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid gray;
+    background-color: rgba(237, 236, 236, 0.2);
+}
+
+.select-filed select {
+    border: none;
+    background-color: rgba(237, 236, 236, 0.2);
+}
+
+.select-filed select:hover {
+    border: none;
+}
+
+.select-filed:hover {
+    border: 2px solid rgb(40, 84, 231);
+}
+
+.how-can-help {
+    margin-bottom: 0 !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+}
+
+.send-btn {
+    width: 97%;
+    font-weight: 700;
+    color: #f9fafa;
+    padding: 1.7%;
+    border-radius: 15px;
+}
+
+.our-location {
+    font-size: 2rem;
+    padding-top: 3%;
+    font-weight: 700;
+    color: #0534a1;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.map {
+    padding: 6%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+.map iframe {
+    border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+    .contact-deatails {
+        width: 100%;
+        border-radius: 15px;
+        padding: 20px;
+        background-color: rgb(248, 251, 253);
+        box-shadow: 0 28px 60px rgba(15, 23, 42, 0.1);
+    }
+
+    .contact-banner {
+        font-size: 2rem;
+        padding-top: 5px;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 6px;
+    }
+
+    .message {
+        width: 100%;
+    }
+
+    .input-filed {
+        width: 100%;
+        height: 5.5vh;
+    }
+
+    .name-email-section div {
+        width: 100%;
+    }
+
+    .send-btn {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .select-filed {
+        width: 100%;
+        padding-top: 10px;
+        height: 5.5vh;
+    }
+
+    .map iframe {
+        border-radius: 20px;
+        height: fit-content;
+    }
+}
